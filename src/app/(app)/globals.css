@@ -23,7 +23,7 @@
 
 @layer base {
   /* followed the shadcn format of extracting values out of hsl code to support tailwind opacity values like bg-primary/90 etc  */
-  :root {
+  /* :root {
     --primary: 34 92% 48%;
     --text: 233 23% 14%;
     --secondary: 210 11 % 15%;
@@ -38,7 +38,7 @@
     --danger-foreground: 353 68% 16%;
     --success: 144 100% 40%;
     --success-foreground: 133 100% 10%;
-  }
+  } */
 
   /* .dark {
     --primary: 269 61% 67%;
@@ -58,11 +58,14 @@
   } */
 
   html {
-    @apply bg-background text-primary font-sans antialiased;
     font-size: 62.5%;
   }
 
   body {
-    @apply text-text text-base;
+    @apply text-base;
   }
+}
+
+.btn {
+  @apply rounded-lg text-xl;
 }

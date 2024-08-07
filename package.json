@@ -68,6 +68,7 @@
     "@types/node": "^20.12.12",
     "@types/react": "npm:types-react@19.0.0-beta.2",
     "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
+    "daisyui": "^4.12.10",
     "dotenv": "^16.4.5",
     "eslint": "^8",
     "eslint-config-next": "15.0.0-canary.35",
