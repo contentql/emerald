@@ -89,7 +89,7 @@ const config: Config = {
   daisyui: {
     themes: [
       {
-        myLighttheme: {
+        myLightTheme: {
           primary: '#7248E6',
           secondary: '#F4F4F5',
           baseContent: '#18181B',

@@ -1,7 +1,6 @@
-import { Page as PageType } from '@payload-types'
 import { notFound } from 'next/navigation'
 
-import RenderBlocks from '@/payload/blocks/RenderBlocks'
+import FeaturedPost from '@/components/marketing/FeaturedPost'
 import { serverClient } from '@/trpc/serverClient'
 
 export const dynamic = 'force-dynamic'
@@ -13,7 +12,12 @@ const Page = async ({ params }: { params: { route: string[] } }) => {
       path: params?.route,
     })
 
-    return <RenderBlocks pageInitialData={pageData as PageType} slug={params} />
+    return (
+      <>
+        <FeaturedPost />
+      </>
+    )
+    // <RenderBlocks pageInitialData={pageData as PageType} slug={params} />
   } catch (error) {
     console.error('Error: Page not found')
     notFound()
