@@ -57,15 +57,15 @@
     --success-foreground: 133 100% 10%;
   } */
 
-  html {
+  /* html {
     font-size: 62.5%;
-  }
+  } */
 
-  body {
+  /* body {
     @apply text-base;
-  }
+  } */
 }
 
 .btn {
-  @apply rounded-lg text-xl;
+  @apply rounded-lg;
 }
