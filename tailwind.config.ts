@@ -99,6 +99,7 @@ const config: Config = {
           success: '#00ff00',
           warning: '#00ff00',
           error: '#ff0000',
+          secondaryContent: '#71717A',
         },
       },
     ],
