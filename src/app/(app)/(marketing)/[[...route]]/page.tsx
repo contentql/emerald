@@ -1,5 +1,8 @@
 import { notFound } from 'next/navigation'
 
+
+import FeaturedPost from '@/components/marketing/FeaturedPost'
+
 import { serverClient } from '@/trpc/serverClient'
 
 export const dynamic = 'force-dynamic'
@@ -11,8 +14,13 @@ const Page = async ({ params }: { params: { route: string[] } }) => {
       path: params?.route,
     })
 
-    // return <RenderBlocks pageInitialData={pageData as PageType} slug={params} />
-    return null
+    return (
+      <>
+        <FeaturedPost />
+      </>
+    )
+    // <RenderBlocks pageInitialData={pageData as PageType} slug={params} />
+
   } catch (error) {
     console.error('Error: Page not found')
     notFound()
