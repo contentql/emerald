@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 
 import FeaturedPost from '@/components/marketing/FeaturedPost'
+import Hero from '@/components/marketing/Hero'
 import LatestPosts from '@/components/marketing/LatestPosts'
 import { serverClient } from '@/trpc/serverClient'
 
@@ -15,6 +16,7 @@ const Page = async ({ params }: { params: { route: string[] } }) => {
 
     return (
       <>
+        <Hero />
         <FeaturedPost />
         <LatestPosts />
       </>
