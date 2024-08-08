@@ -5,7 +5,7 @@ import Image from 'next/image'
 const FeaturedPost = () => {
   return (
     <Container>
-      <div className='mx-auto my-10 flex flex-col gap-4'>
+      <div className='mx-auto my-20 flex flex-col gap-4'>
         <h2 className='text-md font-semibold text-secondary-content'>
           FEATURED POST
         </h2>
@@ -51,7 +51,7 @@ const FeaturedPost = () => {
                 is alive with the hum of mystical.
               </p>
             </div>
-            <Button className='hover:bg-base-150 text-xs btn-secondary self-start'>
+            <Button className='hover:bg-base-150 btn-secondary self-start text-xs'>
               ARCANE
             </Button>
           </div>

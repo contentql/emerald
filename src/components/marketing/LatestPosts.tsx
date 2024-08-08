@@ -44,7 +44,7 @@ const listOfPosts = [
 const LatestPosts = () => {
   return (
     <Container>
-      <div className='my-10 flex flex-row justify-between gap-24'>
+      <div className='mb-20 flex flex-row justify-between gap-24'>
         <div className='flex flex-col gap-4'>
           <h2 className='text-md font-bold text-secondary-content'>
             LATEST POST
@@ -78,20 +78,20 @@ const LatestPosts = () => {
                   <div className='flex gap-2'>
                     <Button
                       key={index}
-                      className={`hover:bg-base-150 text-xs btn-secondary self-start`}>
+                      className={`hover:bg-base-150 btn-secondary self-start text-xs`}>
                       {post?.tagName}
                     </Button>
-                    {index === 1 && (
+                    {index === 0 && (
                       <Button
                         key={index}
-                        className={`text-xs self-start bg-warning text-error hover:bg-warning`}>
+                        className={`self-start bg-warning text-xs text-error hover:bg-warning`}>
                         ✦ PREMIUM
                       </Button>
                     )}
-                    {index === 3 && (
+                    {index === 2 && (
                       <Button
                         key={index}
-                        className={`text-xs btn-primary self-start hover:bg-primary`}>
+                        className={`btn-primary self-start text-xs hover:bg-primary`}>
                         ✽ MEMBER
                       </Button>
                     )}
@@ -101,7 +101,7 @@ const LatestPosts = () => {
             ))}
           </div>
           <div className='flex items-center justify-center'>
-            <Button className='hover:bg-base-150 text-xs btn-secondary rounded-full'>
+            <Button className='hover:bg-base-150 btn-secondary rounded-full text-xs'>
               LOAD MORE
             </Button>
           </div>
@@ -120,7 +120,7 @@ const LatestPosts = () => {
                   width={32}
                   className='rounded-full'
                 />
-                <span className='ml-2'>Arcane</span>
+                <span className='ml-2 font-semibold'>Arcane</span>
               </button>
               <button className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
                 <Image
@@ -130,7 +130,7 @@ const LatestPosts = () => {
                   width={32}
                   className='rounded-full'
                 />
-                <span className='ml-2'>Arcane</span>
+                <span className='ml-2 font-semibold'>Arcane</span>
               </button>
               <button className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
                 <Image
@@ -140,7 +140,7 @@ const LatestPosts = () => {
                   width={32}
                   className='rounded-full'
                 />
-                <span className='ml-2'>Arcane</span>
+                <span className='ml-2 font-semibold'>Arcane</span>
               </button>
             </div>
             <div className='flex flex-col gap-4'>
