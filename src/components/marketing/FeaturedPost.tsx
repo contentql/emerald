@@ -5,9 +5,9 @@ import Image from 'next/image'
 const FeaturedPost = () => {
   return (
     <Container>
-      <div className='mx-auto flex flex-col gap-4'>
-        <h2 className='text-2xl font-bold text-secondary-content'>
-          Featured Post
+      <div className='mx-auto my-10 flex flex-col gap-4'>
+        <h2 className='text-md font-semibold text-secondary-content'>
+          FEATURED POST
         </h2>
         <div className='flex items-center gap-6 md:gap-10'>
           <div>
@@ -23,21 +23,21 @@ const FeaturedPost = () => {
           </div>
           <div className='flex flex-col gap-4'>
             <div className='flex flex-col gap-4'>
-              <h3 className='text-sm font-semibold text-base-content'>
+              <h3 className='text-2xl font-semibold text-base-content'>
                 Enchanted Realms of Mushroom Monarchies
               </h3>
               <div className='flex items-center gap-2'>
                 <div className='flex -space-x-2'>
                   <Image
                     alt='Author 1'
-                    src='/images/home/4-2.webp'
+                    src='/images/home/2-1.webp'
                     height={26}
                     width={26}
                     className='rounded-full'
                   />
                   <Image
                     alt='Author 2'
-                    src='/images/home/4-2.webp'
+                    src='/images/home/2-1.webp'
                     height={26}
                     width={26}
                     className='rounded-full'
@@ -51,7 +51,9 @@ const FeaturedPost = () => {
                 is alive with the hum of mystical.
               </p>
             </div>
-            <Button className='hover:bg-base-150 self-start'>ARCANE</Button>
+            <Button className='hover:bg-base-150 text-xs btn-secondary self-start'>
+              ARCANE
+            </Button>
           </div>
         </div>
       </div>

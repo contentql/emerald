@@ -7,7 +7,7 @@ const Button = ({
   className,
 }: ComponentPropsWithoutRef<'button'>) => {
   return (
-    <button className={cn('text-md btn btn-sm hover:bg-[#805AE9]', className)}>
+    <button className={cn('btn btn-sm text-sm hover:bg-[#805AE9]', className)}>
       {children}
     </button>
   )
