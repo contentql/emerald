@@ -1,11 +1,15 @@
+import Button from '../common/Button'
+import Container from '../common/Container'
 import Image from 'next/image'
 
 const FeaturedPost = () => {
   return (
-    <section className='my-8 flex w-full items-center sm:my-12 md:my-16 lg:my-20'>
-      <div className='max-w-screen-lg mx-auto flex flex-col gap-4'>
-        <h2 className='text-2xl font-bold'>Featured Post</h2>
-        <div className='gap-6 md:gap-10 flex'>
+    <Container>
+      <div className='mx-auto my-20 flex flex-col gap-4'>
+        <h2 className='text-md font-semibold text-secondary-content'>
+          FEATURED POST
+        </h2>
+        <div className='flex items-center gap-6 md:gap-10'>
           <div>
             <Image
               alt='Featured Post'
@@ -18,38 +22,42 @@ const FeaturedPost = () => {
             />
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-lg font-semibold'>
-              Enchanted Realms of Mushroom Monarchies
-            </h3>
-            <div className='flex items-center gap-2'>
-              <div className='flex -space-x-2'>
-                <Image
-                  alt='Author 1'
-                  src='/images/home/4-2.webp'
-                  height={26}
-                  width={26}
-                  className='rounded-full'
-                />
-                <Image
-                  alt='Author 2'
-                  src='/images/home/4-2.webp'
-                  height={26}
-                  width={26}
-                  className='rounded-full'
-                />
+            <div className='flex flex-col gap-4'>
+              <h3 className='text-2xl font-semibold text-base-content'>
+                Enchanted Realms of Mushroom Monarchies
+              </h3>
+              <div className='flex items-center gap-2'>
+                <div className='flex -space-x-2'>
+                  <Image
+                    alt='Author 1'
+                    src='/images/home/2-1.webp'
+                    height={26}
+                    width={26}
+                    className='rounded-full'
+                  />
+                  <Image
+                    alt='Author 2'
+                    src='/images/home/2-1.webp'
+                    height={26}
+                    width={26}
+                    className='rounded-full'
+                  />
+                </div>
+                <p className='ml-3'>Elderich</p>
               </div>
-              <p className='ml-3'>Elderich</p>
+              <p className='text-neutral-content'>
+                This journey transcends ordinary boundaries, inviting you to
+                explore a world where magic emanates from every cap and the air
+                is alive with the hum of mystical.
+              </p>
             </div>
-            <p>
-              This journey transcends ordinary boundaries, inviting you to
-              explore a world where magic emanates from every cap and the air is
-              alive with the hum of mystical.
-            </p>
-            <button className='btn'>ARCANE</button>
+            <Button className='hover:bg-base-150 btn-secondary self-start text-xs'>
+              ARCANE
+            </Button>
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   )
 }
 

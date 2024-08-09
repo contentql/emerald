@@ -1,34 +1,30 @@
 import Button from '../common/Button'
 import Container from '../common/Container'
-import KeyDownIcon from '../svg/KeyDownIcon'
+import DropDown from '../common/DropDown'
 import Logo from '../svg/Logo'
 import MenuIcon from '../svg/MenuIcon'
 import SearchIcon from '../svg/SearchIcon'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <Container className='flex h-20 items-center justify-between'>
-      <div>
+      <Link href={'/'}>
         <Logo />
-      </div>
+      </Link>
       <nav className='hidden lg:block'>
         <ul className='flex gap-8'>
-          <li>
+          <Link href={'/style-guide'}>
             Style Guide{' '}
             <span className='inline-block bg-gradient-to-r from-[#FED7AA] to-[#F97316] bg-clip-text text-transparent'>
               ✦
             </span>
-          </li>
-          <li>Features</li>
-          <li>Membership</li>
-          <li>Authors</li>
-          <li>Tags</li>
-          <li>
-            More{' '}
-            <span>
-              <KeyDownIcon />
-            </span>
-          </li>
+          </Link>
+          <Link href={'/features'}>Features</Link>
+          <Link href={'/membership'}>Membership</Link>
+          <Link href={'/author'}>Authors</Link>
+          <Link href={'/tag'}>Tags</Link>
+          <DropDown />
         </ul>
       </nav>
       <div className='flex gap-4'>

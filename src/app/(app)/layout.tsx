@@ -3,7 +3,6 @@ import { Space_Grotesk } from 'next/font/google'
 
 import '@/app/(app)/globals.css'
 import '@/app/(app)/theme.scss'
-import Header from '@/components/marketing/Header'
 import Provider from '@/trpc/Provider'
 
 const inter = Space_Grotesk({ subsets: ['latin'] })
@@ -21,10 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en' className='dark'>
       <body className={`${inter.className}`}>
-        <Provider>
-          <Header />
-          {children}
-        </Provider>
+        <Provider>{children}</Provider>
       </body>
     </html>
   )

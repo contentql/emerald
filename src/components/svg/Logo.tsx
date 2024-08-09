@@ -45,13 +45,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -62,13 +62,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -79,13 +79,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -96,13 +96,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -113,13 +113,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -130,13 +130,13 @@ const Logo = () => {
           y2='53.3648'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFD69C'
-            // style='stop-color:#FFD69C;stop-color:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            stopColor='#FFD69C'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#F95E70'
-            // style='stop-color:#F95E70;stop-color:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            stopColor='#F95E70'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
           />
         </linearGradient>
       </defs>
