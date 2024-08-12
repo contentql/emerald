@@ -1,6 +1,4 @@
-import { User } from '@payload-types'
-
-import AuthorPostsView from '@/components/marketing/author/BlogsByAuthorAndTag'
+import AuthorView from '@/components/marketing/AuthorView'
 import { serverClient } from '@/trpc/serverClient'
 
 interface PageProps {
@@ -19,7 +17,8 @@ const Author = async ({ params, searchParams }: PageProps) => {
   const authorBlogs = await serverClient.author.getBlogsByAuthorName({
     authorName: params?.authorName,
   })
-  return <AuthorPostsView author={author as User} blogsData={authorBlogs} />
+  // return <AuthorPostsView author={author as User} blogsData={authorBlogs} />
+  return <AuthorView />
 }
 
 export default Author
