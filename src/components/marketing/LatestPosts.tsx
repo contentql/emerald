@@ -101,7 +101,7 @@ const LatestPosts = () => {
             ))}
           </div>
           <div className='flex items-center justify-center'>
-            <Button className='hover:bg-base-150 btn-secondary rounded-full text-xs'>
+            <Button className='hover:bg-base-150 btn-secondary !rounded-full text-xs'>
               LOAD MORE
             </Button>
           </div>

@@ -1,7 +1,8 @@
 import { Blog } from '@payload-types'
 import { Metadata } from 'next'
 
-import BlogPostView from '@/components/marketing/blog/BlogPost'
+import BlogView from '@/components/marketing/BlogView'
+import PostScrollBar from '@/components/marketing/PostScrollBar'
 import { serverClient } from '@/trpc/serverClient'
 import { generateMeta } from '@/utils/generate-meta'
 
@@ -25,11 +26,15 @@ const Page = async ({ params }: PageProps) => {
   const blogsData = await serverClient.blog.getAllBlogs()
 
   return (
-    <BlogPostView
-      decodedSlug={decodedSlug}
-      blog={blog as Blog}
-      blogsData={blogsData}
-    />
+    // <BlogPostView
+    //   decodedSlug={decodedSlug}
+    //   blog={blog as Blog}
+    //   blogsData={blogsData}
+    // />
+    <div>
+      <PostScrollBar />
+      <BlogView />
+    </div>
   )
 }
 
