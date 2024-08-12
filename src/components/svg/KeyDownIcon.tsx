@@ -1,7 +1,13 @@
-const KeyDownIcon = () => {
+import React from 'react'
+
+interface KeyDownIconProps {
+  className?: string
+}
+
+const KeyDownIcon: React.FC<KeyDownIconProps> = ({ className }) => {
   return (
     <svg
-      className='inline-block text-zinc-900'
+      className={`inline-block text-zinc-900 ${className || ''}`}
       width='20px'
       height='20px'
       strokeWidth='1.5'
