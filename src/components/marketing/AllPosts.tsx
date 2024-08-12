@@ -1,5 +1,8 @@
+'use client'
+
 import Container from '../common/Container'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface CardDataType {
   imageUrl: string
@@ -8,13 +11,15 @@ interface CardDataType {
 }
 
 const AllPosts = ({ cardData }: { cardData: CardDataType[] }) => {
+  const pageSlug = usePathname()
+
   return (
     <Container className='py-24'>
       <div className='grid grid-cols-4 gap-8'>
         {cardData?.map((card, index) => (
           <Link
             key={index}
-            href={'/'}
+            href={`${pageSlug}/${card?.title}`}
             className='rounded-2xl p-4 transition duration-300 ease-in-out hover:bg-secondary'>
             <div className='flex flex-col items-center justify-center gap-2.5'>
               <div className='avatar'>
