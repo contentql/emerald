@@ -1,6 +1,7 @@
 import Button from '../common/Button'
 import Container from '../common/Container'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const listOfPosts = [
   {
@@ -43,57 +44,62 @@ const listOfPosts = [
 
 const LatestPosts = () => {
   return (
-    <Container>
+    <Container className='md:max-w-screen-container w-full'>
       <div className='mb-20 flex flex-row justify-between gap-24'>
         <div className='flex flex-col gap-4'>
-          <h2 className='text-md font-bold text-secondary-content'>
+          <h2 className='text-sm font-semibold text-secondary-content'>
             LATEST POST
           </h2>
           <div className='space-y-14'>
             {listOfPosts.map((post, index) => (
               <div key={index} className='flex gap-7'>
                 <div className='avatar'>
-                  <div className='h-[112px] w-[112px] rounded-full'>
-                    <img src={post?.imageUrl} alt='' />
+                  <div className='relative h-[112px] w-full'>
+                    <Image
+                      src={post?.imageUrl}
+                      alt='Post'
+                      fill
+                      className='rounded-full'
+                    />
                   </div>
                 </div>
                 <div className='flex flex-col gap-2'>
                   <div className='flex flex-col gap-2'>
-                    <div className='text-xl font-semibold text-base-content'>
-                      {post?.title}
-                    </div>
+                    <Link href={`/${post?.title}`}>
+                      <div className='text-xl font-semibold text-base-content'>
+                        {post?.title}
+                      </div>
+                    </Link>
                     <div className='flex items-center gap-2'>
-                      <div>
+                      <Link href={`/author/${post?.authorName}`}>
                         <Image
-                          alt=''
+                          alt='Author'
                           src={post?.authorImageUrl}
                           height={26}
                           width={26}
                         />
-                      </div>
-                      <p className='ml-2'>{post?.authorName}</p>
+                      </Link>
+                      <Link href={`/author/${post?.authorName}`}>
+                        <p className='ml-2'>{post?.authorName}</p>
+                      </Link>
                     </div>
                     <p>{post?.description}</p>
                   </div>
                   <div className='flex gap-2'>
-                    <Button
-                      key={index}
-                      className={`hover:bg-base-150 btn-secondary self-start text-xs`}>
-                      {post?.tagName}
-                    </Button>
+                    <Link href={`/tag/${post?.tagName}`}>
+                      <div className='badge badge-secondary badge-lg rounded-lg border border-zinc-200 text-xs font-semibold hover:opacity-80'>
+                        {post?.tagName}
+                      </div>
+                    </Link>
                     {index === 0 && (
-                      <Button
-                        key={index}
-                        className={`self-start bg-warning text-xs text-error hover:bg-warning`}>
+                      <div className='badge badge-warning badge-lg rounded-lg border border-[#FEC896] text-xs font-semibold text-error '>
                         ✦ PREMIUM
-                      </Button>
+                      </div>
                     )}
                     {index === 2 && (
-                      <Button
-                        key={index}
-                        className={`btn-primary self-start text-xs hover:bg-primary`}>
+                      <div className='border-black/0.1 badge badge-primary badge-lg rounded-lg border text-xs font-semibold text-base-100'>
                         ✽ MEMBER
-                      </Button>
+                      </div>
                     )}
                   </div>
                 </div>
@@ -107,7 +113,7 @@ const LatestPosts = () => {
           </div>
         </div>
         <div className='sticky top-10 h-full w-[253px] flex-shrink-0 space-y-4'>
-          <h2 className='text-md font-bold text-secondary-content'>
+          <h2 className='text-sm font-semibold text-secondary-content'>
             POPULAR CATEGORIES
           </h2>
           <div className='flex flex-col gap-12'>
@@ -144,7 +150,7 @@ const LatestPosts = () => {
               </button>
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='text-md font-bold text-secondary-content'>
+              <div className='text-sm font-semibold text-secondary-content'>
                 SUBSCRIBE
               </div>
               <div className='flex flex-col gap-3'>
@@ -152,7 +158,7 @@ const LatestPosts = () => {
                   <input
                     type='text'
                     placeholder='Email Address'
-                    className='input input-bordered w-full max-w-xs'
+                    className='input input-sm input-bordered w-full max-w-xs'
                   />
                 </div>
                 <div>
