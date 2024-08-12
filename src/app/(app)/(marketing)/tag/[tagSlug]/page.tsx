@@ -1,5 +1,4 @@
-import TagBlogListView from '@/components/marketing/tag/BlogsByTag'
-import { serverClient } from '@/trpc/serverClient'
+import TagView from '@/components/marketing/TagView'
 
 interface PageProps {
   params: {
@@ -8,18 +7,19 @@ interface PageProps {
 }
 
 const page = async ({ params }: PageProps) => {
-  try {
-    const blogs = await serverClient.tag.getBlogs({ tagSlug: params?.tagSlug })
+  // try {
+  //   const blogs = await serverClient.tag.getBlogs({ tagSlug: params?.tagSlug })
 
-    return (
-      <TagBlogListView
-        blogs={blogs?.blogsData}
-        tagDetails={blogs?.tagData?.at(0)}
-      />
-    )
-  } catch (error) {
-    console.error('Error fetching blogs:', error)
-  }
+  //   return (
+  //     <TagBlogListView
+  //       blogs={blogs?.blogsData}
+  //       tagDetails={blogs?.tagData?.at(0)}
+  //     />
+  //   )
+  // } catch (error) {
+  //   console.error('Error fetching blogs:', error)
+  // }
+  return <TagView />
 }
 
 export default page
