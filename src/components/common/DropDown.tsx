@@ -24,28 +24,21 @@ export default function Example() {
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/author/celia'}
               className='block px-4 py-2  text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Single Author Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/tag/arcane'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Single Tag Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
-              className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
-              Left-Aligned Post
-            </a>
-          </MenuItem>
-          <MenuItem>
-            <a
-              href='#'
+              href={'/blogpost'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Centered Post
             </a>
