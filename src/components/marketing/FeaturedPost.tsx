@@ -5,14 +5,14 @@ import Link from 'next/link'
 const FeaturedPost = () => {
   return (
     <Container className='md:max-w-screen-container w-full'>
-      <div className='mx-auto my-20 flex flex-col gap-4'>
+      <div className='mx-auto my-20 space-y-4'>
         <h2 className='text-sm font-semibold text-secondary-content'>
           FEATURED POST
         </h2>
-        <div className='flex items-center gap-6 md:gap-10'>
+        <div className='flex w-full items-center gap-6 md:gap-10'>
           <Link
             href={'/Enchanted Realms of Mushroom Monarchies'}
-            className='relative h-[300px] w-full'>
+            className='relative h-[300px] w-1/2'>
             <Image
               alt='Featured Post'
               src='/images/home/4-2.webp'
@@ -20,7 +20,7 @@ const FeaturedPost = () => {
               fill
             />
           </Link>
-          <div className='flex flex-col gap-4'>
+          <div className='flex w-1/2 flex-col gap-4'>
             <div className='flex flex-col gap-4'>
               <Link href={'/Enchanted Realms of Mushroom Monarchies'}>
                 <h3 className='text-2xl font-semibold text-base-content'>
