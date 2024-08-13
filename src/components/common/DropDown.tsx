@@ -17,7 +17,7 @@ export default function Example() {
         <div className='py-1'>
           <MenuItem>
             <a
-              href='#'
+              href={'/subscribe'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Subscribe Page
             </a>
@@ -52,28 +52,28 @@ export default function Example() {
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/recommendations'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Recommendations
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/contact'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Contact
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/404'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               404 Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/documentation'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Documentation
             </a>
