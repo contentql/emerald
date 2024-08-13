@@ -19,7 +19,7 @@ const Hero = ({
             </div>
           </div>
           {title !== '' ? (
-            <div className='mt-6 text-xl font-bold'>{title}</div>
+            <div className='mt-6 text-xl font-bold sm:text-2xl'>{title}</div>
           ) : (
             ''
           )}
