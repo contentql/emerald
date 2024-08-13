@@ -17,63 +17,56 @@ export default function Example() {
         <div className='py-1'>
           <MenuItem>
             <a
-              href='#'
+              href={'/subscribe'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Subscribe Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/author/celia'}
               className='block px-4 py-2  text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Single Author Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/tag/arcane'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Single Tag Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
-              className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
-              Left-Aligned Post
-            </a>
-          </MenuItem>
-          <MenuItem>
-            <a
-              href='#'
+              href={'/blogpost'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Centered Post
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/recommendations'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Recommendations
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/contact'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Contact
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/404'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               404 Page
             </a>
           </MenuItem>
           <MenuItem>
             <a
-              href='#'
+              href={'/documentation'}
               className='block px-4 py-2 text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900'>
               Documentation
             </a>
