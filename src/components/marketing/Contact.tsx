@@ -27,7 +27,7 @@ const Contact = () => {
             Contact
           </div>
           <div className='mt-4 text-[1.5rem] font-semibold leading-8 text-base-content'>
-            Got something to say? Reach out - We're all ears!
+            Got something to say? Reach out - We&apos;re all ears!
           </div>
           <form className='xs:mt-8 mt-6 pr-1'>
             <div className='flex flex-col gap-3.5'>
