@@ -1,13 +1,18 @@
 import Button from '../common/Button'
 import Globe from '../svg/Globe'
 import Twitter from '../svg/Twitter'
+import Image from 'next/image'
 
 const AuthorDetails = () => {
   return (
     <div className='flex flex-col items-center bg-secondary pb-16 pt-14'>
       <div className='avatar'>
         <div className='w-24 rounded-full'>
-          <img src='https://elrond.hedwik.io/content/images/size/w600/format/webp/2023/12/3-1.png' />
+          <Image
+            alt='Author'
+            fill
+            src='https://elrond.hedwik.io/content/images/size/w600/format/webp/2023/12/3-1.png'
+          />
         </div>
       </div>
       <div className='mt-6 text-xl font-bold'>Noah Cooper</div>
