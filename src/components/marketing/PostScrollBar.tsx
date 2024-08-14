@@ -3,10 +3,15 @@
 import Button from '../common/Button'
 import Container from '../common/Container'
 import Copy from '../svg/Copy'
+import TickMark from '../svg/TickMark'
+import { env } from '@env'
 import { motion, useScroll, useSpring } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const PostScrollBar = () => {
+  const pathName = usePathname()
+  const [copied, setCopied] = useState(false)
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -32,6 +37,15 @@ const PostScrollBar = () => {
     }
   }, [])
 
+  function copyText(pathName: string) {
+    navigator.clipboard
+      .writeText(`${env.NEXT_PUBLIC_PUBLIC_URL}${pathName}`)
+      .then(() => {
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      })
+      .catch(err => console.error('Failed to copy text: ', err))
+  }
   return (
     <div className='sticky top-0 z-10 bg-base-100'>
       {showContainer && (
@@ -51,9 +65,11 @@ const PostScrollBar = () => {
                   Aureate Serpent and Celestial Sojourn
                 </div>
               </div>
-              <Button className='hover:bg-base-150 !rounded-full'>
-                <Copy />
-                Copy Link
+              <Button
+                onClick={() => copyText(pathName)}
+                className={`hover:bg-base-150 } !rounded-full`}>
+                {copied ? <TickMark /> : <Copy />}
+                {copied ? 'Copied' : 'Copy Link'}
               </Button>
             </div>
           </Container>
