@@ -1,6 +1,7 @@
 'use client'
 
 import Container from '../common/Container'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -23,8 +24,8 @@ const AllPosts = ({ cardData }: { cardData: CardDataType[] }) => {
             className='rounded-2xl p-4 transition duration-300 ease-in-out hover:bg-secondary'>
             <div className='flex flex-col items-center justify-center gap-2.5'>
               <div className='avatar'>
-                <div className='w-20 rounded-full'>
-                  <img src={card?.imageUrl} />
+                <div className='w-24 rounded-full'>
+                  <Image alt='Post' src={card?.imageUrl} fill />
                 </div>
               </div>
               <div className='text-base font-semibold sm:text-lg'>

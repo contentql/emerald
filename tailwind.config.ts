@@ -10,6 +10,17 @@ const config: Config = {
     './src/payload/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      animation: {
+        'grayscale-pulse': 'grayscale-pulse 3s ease-in-out forwards',
+      },
+      keyframes: {
+        'grayscale-pulse': {
+          '0%': { filter: 'grayscale(0%)' },
+          '100%': { filter: 'grayscale(100%)' },
+        },
+      },
+    },
     //   colors: {
     //     primary: 'hsl(var(--primary))',
     //     text: 'hsl(var(--text))',

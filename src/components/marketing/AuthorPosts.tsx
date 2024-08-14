@@ -1,4 +1,6 @@
 import Button from '../common/Button'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const listOfPosts = [
   {
@@ -51,8 +53,10 @@ const AuthorPosts = () => {
         {listOfPosts.map((post, index) => (
           <div key={index} className='flex gap-7'>
             <div className='avatar'>
-              <div className='h-[112px] w-[112px] rounded-full'>
-                <img src={post?.imageUrl} alt='' />
+              <div className='relative h-28 w-28 rounded-full'>
+                <Link href={post?.title}>
+                  <Image fill src={post?.imageUrl} alt='BlogPost' />
+                </Link>
               </div>
             </div>
             <div className='flex flex-col gap-2'>
