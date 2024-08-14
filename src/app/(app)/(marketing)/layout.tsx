@@ -20,7 +20,7 @@ export default async function Layout({
   const user = await getCurrentUser()
 
   return (
-    <div className='flex min-h-screen flex-col'>
+    <div className='flex min-h-screen flex-col bg-white'>
       {/* Navbar */}
       <Header />
       <div className='flex-grow'>{children}</div>

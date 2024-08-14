@@ -11,27 +11,29 @@ const Hero = ({
   subTitle: string
 }) => {
   return (
-    <div className='bg-secondary'>
+    <div className='bg-base-100'>
       <Container>
         <div className='flex flex-col items-center pb-16 pt-14'>
           <div className='avatar'>
-            <div className='w-20 rounded-full'>
+            <div className='w-24 rounded-full'>
               {/* <img src={imagePath} /> */}
               <Image
                 src={imagePath}
                 alt={title || 'Hero Image'}
-                width={80}
-                height={80}
                 className='rounded-full'
               />
             </div>
           </div>
           {title !== '' ? (
-            <div className='mt-6 text-xl font-bold sm:text-2xl'>{title}</div>
+            <div className='mt-6 text-xl font-bold leading-none sm:text-2xl'>
+              {title}
+            </div>
           ) : (
             ''
           )}
-          <p className='mt-4 max-w-sm text-center font-medium'>{subTitle}</p>
+          <p className='mt-4 max-w-sm text-center font-normal text-[#3F3F46]'>
+            {subTitle}
+          </p>
         </div>
       </Container>
     </div>

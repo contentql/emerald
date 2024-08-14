@@ -2,7 +2,7 @@ import Navbar from './Navbar'
 
 const Header = () => {
   return (
-    <div className='bg-secondary'>
+    <div className='bg-base-100'>
       <Navbar />
     </div>
   )
