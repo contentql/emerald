@@ -90,7 +90,7 @@ const SignUpForm = () => {
         <div>
           <Logo className={'flex h-[20px] w-fit items-center'} />
           <div className='mt-16 font-semibold uppercase tracking-widest text-secondary-content text-opacity-85'>
-            Signin
+            Signup
           </div>
           <div className='mt-4 text-[1.5rem] font-semibold leading-8 text-base-content'>
             A super minimal & lightweight theme with Premium Membership and
@@ -110,7 +110,7 @@ const SignUpForm = () => {
               />
               <button
                 type='submit'
-                className='h-10 max-h-10 min-h-[40px] w-full rounded-md bg-primary text-[14px] font-medium text-white'>
+                className='h-10 max-h-10 min-h-[40px] w-full rounded-md bg-primary text-[14px] font-medium text-white hover:bg-[#805AE9]'>
                 ✦ &nbsp;Sign up
               </button>
             </div>
