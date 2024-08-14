@@ -174,13 +174,13 @@ const Membership = () => {
         </div>
         <div className='mx-auto'>
           <div className='text-3xl font-bold'>
-            Have Questions? Explore Our FAQ Section
+            Have Questions&rsquo; Explore Our FAQ Section
           </div>
           <p>
             Navigate our FAQ hub for brief yet detailed responses to common
             queries. From membership tiers to payment info, find the information
-            you need for a hassle-free experience. Can't locate what you're
-            after? Our support team is here to help.
+            you need for a hassle-free experience. Can&apos;t locate what
+            you&apos;re after&rsquo; Our support team is here to help.
           </p>
         </div>
       </div>

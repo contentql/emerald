@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className='flex gap-4'>
-        <Button className='h-[34px] w-[34px] !rounded-full px-1 hover:bg-inherit'>
+        <Button className='h-[34px] w-[34px] !rounded-full bg-neutral-content bg-opacity-5 px-1 hover:bg-inherit'>
           <SearchIcon />
         </Button>
         <Button

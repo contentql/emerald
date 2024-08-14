@@ -6,6 +6,7 @@ import Copy from '../svg/Copy'
 import TickMark from '../svg/TickMark'
 import { env } from '@env'
 import { motion, useScroll, useSpring } from 'framer-motion'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
@@ -58,7 +59,12 @@ const PostScrollBar = () => {
               <div className='xs:gap-4 flex items-center justify-center gap-3'>
                 <div className='avatar'>
                   <div className='w-10 rounded-full'>
-                    <img src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp' />
+                    <Image
+                      src={
+                        'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                      }
+                      alt='avatar'
+                    />
                   </div>
                 </div>
                 <div className='line-clamp-1 text-lg sm:font-semibold'>

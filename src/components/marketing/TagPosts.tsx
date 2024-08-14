@@ -60,7 +60,7 @@ const TagPosts = () => {
             <Link href={'/'}>
               <div className='avatar'>
                 <div className='h-[112px] w-[112px] rounded-full'>
-                  <img src={post?.imageUrl} alt='Post' />
+                  <Image src={post?.imageUrl} alt='Post' />
                 </div>
               </div>
             </Link>
