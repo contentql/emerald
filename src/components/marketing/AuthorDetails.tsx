@@ -7,7 +7,7 @@ const AuthorDetails = () => {
   return (
     <div className='flex flex-col items-center bg-secondary pb-16 pt-14'>
       <div className='avatar'>
-        <div className='w-24 rounded-full'>
+        <div className='relative w-24 rounded-full'>
           <Image
             alt='Author'
             fill

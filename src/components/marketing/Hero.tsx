@@ -15,13 +15,12 @@ const Hero = ({
       <Container>
         <div className='flex flex-col items-center pb-16 pt-14'>
           <div className='avatar'>
-            <div className='w-20 rounded-full'>
+            <div className='relative w-24 rounded-full'>
               {/* <img src={imagePath} /> */}
               <Image
                 src={imagePath}
                 alt={title || 'Hero Image'}
-                width={80}
-                height={80}
+                fill
                 className='rounded-full'
               />
             </div>

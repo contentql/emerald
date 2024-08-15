@@ -57,55 +57,57 @@ const TagPosts = () => {
       <div className='space-y-14'>
         {listOfPosts.map((post, index) => (
           <div key={index} className='flex gap-7'>
-            <Link href={'/'}>
-              <div className='avatar'>
-                <div className='h-[112px] w-[112px] rounded-full'>
-                  <img src={post?.imageUrl} alt='Post' />
-                </div>
-              </div>
-            </Link>
+            <div className='avatar'>
+              <Link href={`/${post?.title}`} className='relative h-28 w-28'>
+                <Image
+                  fill
+                  src={post?.imageUrl}
+                  alt='Post'
+                  className='rounded-full'
+                />
+              </Link>
+            </div>
+
             <div className='flex flex-col gap-2'>
               <div className='flex flex-col gap-2'>
-                <Link href={'/'}>
-                  {' '}
-                  <div className='text-xl font-semibold text-base-content'>
-                    {post?.title}
-                  </div>
+                <Link
+                  href={`/${post?.title}`}
+                  className='text-xl font-semibold text-base-content'>
+                  {post?.title}
                 </Link>
-                <Link href={'/'}>
-                  <div className='flex items-center gap-2'>
-                    <div>
-                      <Image
-                        alt=''
-                        src={post?.authorImageUrl}
-                        height={26}
-                        width={26}
-                      />
-                    </div>
+
+                <div className='flex items-center gap-2'>
+                  <Link href={`/author/${post?.authorName}`}>
+                    <Image
+                      alt=''
+                      src={post?.authorImageUrl}
+                      height={26}
+                      width={26}
+                      className='rounded-full'
+                    />
+                  </Link>
+                  <Link href={`/author/${post?.authorName}`}>
                     <p className='ml-2'>{post?.authorName}</p>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
+
                 <p>{post?.description}</p>
               </div>
               <div className='flex gap-2'>
-                <Button
-                  key={index}
-                  className={`hover:bg-base-150 btn-secondary self-start text-xs`}>
-                  {post?.tagName}
-                </Button>
+                <Link href={`/tag/${post?.tagName}`}>
+                  <div className='badge badge-secondary badge-lg rounded-lg border border-zinc-200 text-xs font-semibold hover:opacity-80'>
+                    {post?.tagName}
+                  </div>
+                </Link>
                 {index === 0 && (
-                  <Button
-                    key={index}
-                    className={`self-start bg-warning text-xs text-error hover:bg-warning`}>
+                  <div className='badge badge-warning badge-lg rounded-lg border border-[#FEC896] text-xs font-semibold text-error '>
                     ✦ PREMIUM
-                  </Button>
+                  </div>
                 )}
                 {index === 2 && (
-                  <Button
-                    key={index}
-                    className={`btn-primary self-start text-xs hover:bg-primary`}>
+                  <div className='border-black/0.1 badge badge-primary badge-lg rounded-lg border text-xs font-semibold text-base-100'>
                     ✽ MEMBER
-                  </Button>
+                  </div>
                 )}
               </div>
             </div>
