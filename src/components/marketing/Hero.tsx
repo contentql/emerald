@@ -1,5 +1,8 @@
+'use client'
+
 import Container from '../common/Container'
 import Image, { StaticImageData } from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const Hero = ({
   imagePath,
@@ -10,12 +13,16 @@ const Hero = ({
   title: string
   subTitle: string
 }) => {
+  const pathName = usePathname()
+
   return (
     <div className='bg-base-100'>
       <Container>
-        <div className='flex flex-col items-center pb-16 pt-14'>
+        <div
+          className={`flex flex-col items-center gap-6 ${pathName === '/' ? 'py-16' : 'pb-16 pt-14'}`}>
           <div className='avatar'>
-            <div className='relative w-24 rounded-full'>
+            <div
+              className={`relative ${pathName === '/' ? 'w-20' : 'w-24'} rounded-full`}>
               {/* <img src={imagePath} /> */}
               <Image
                 src={imagePath}
@@ -25,16 +32,19 @@ const Hero = ({
               />
             </div>
           </div>
-          {title !== '' ? (
-            <div className='mt-6 text-xl font-bold leading-none sm:text-2xl'>
-              {title}
-            </div>
-          ) : (
-            ''
-          )}
-          <p className='mt-4 max-w-sm text-center font-normal text-[#3F3F46]'>
-            {subTitle}
-          </p>
+          <div className='text-center'>
+            {title !== '' ? (
+              <div className='text-2xl font-bold leading-none sm:text-2xl'>
+                {title}
+              </div>
+            ) : (
+              ''
+            )}
+            <p
+              className={`max-w-sm text-center ${pathName === '/' ? 'text-lg font-medium leading-7 text-base-content' : 'mt-4 text-base font-normal text-[#3F3F46]'}`}>
+              {subTitle}
+            </p>
+          </div>
         </div>
       </Container>
     </div>

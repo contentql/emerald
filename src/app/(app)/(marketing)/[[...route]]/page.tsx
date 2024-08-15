@@ -3,14 +3,14 @@ import { notFound } from 'next/navigation'
 import FeaturedPost from '@/components/marketing/FeaturedPost'
 import Hero from '@/components/marketing/Hero'
 import LatestPosts from '@/components/marketing/LatestPosts'
-import AuthorHeroImg from '@/public/assets/authors-hero-img.webp'
 import { serverClient } from '@/trpc/serverClient'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
 const heroData = {
-  imagePath: AuthorHeroImg,
+  imagePath:
+    'https://elrond.hedwik.io/content/images/size/w600/format/webp/2023/12/thumbnail--1-.svg',
   title: '',
   subTitle:
     'A super minimal & lightweight theme with Premium Membership and fully Ghost-compatible.',

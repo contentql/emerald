@@ -21,14 +21,14 @@ const Membership = () => {
           onClick={toggleSwitch}
           className={`${
             isMonthly ? 'bg-white shadow' : 'bg-transparent'
-          } rounded-full px-4 py-2 text-gray-600 transition-colors duration-300 focus:outline-none`}>
+          } w-24 rounded-full px-4 py-3 text-sm text-gray-600 focus:outline-none`}>
           Monthly
         </button>
         <button
           onClick={toggleSwitch}
           className={`${
             !isMonthly ? 'bg-white shadow' : 'bg-transparent'
-          } rounded-full px-4 py-2 text-gray-600 transition-colors duration-300 focus:outline-none`}>
+          } w-24 rounded-full px-4 py-3 text-sm text-gray-600 focus:outline-none`}>
           Yearly
         </button>
       </div>
