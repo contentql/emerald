@@ -15,7 +15,7 @@ const Membership = () => {
   }
 
   return (
-    <div className='my-16'>
+    <div className='xs:px-6 mx-auto my-16 w-full px-4 md:w-full md:max-w-screen-lg'>
       <div className='mx-auto mb-9 flex w-48 items-center space-x-1 rounded-full bg-gray-100 p-1.5'>
         <button
           onClick={toggleSwitch}
@@ -33,11 +33,13 @@ const Membership = () => {
         </button>
       </div>
       <Container className='gap-8 lg:flex'>
-        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] p-6'>
+        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] border-zinc-100 p-6'>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center justify-start gap-2.5'>
               <FreePlanIcon />
-              <div className='text-xl font-bold text-base-content'>Free</div>
+              <div className='text-xl font-bold leading-none text-base-content'>
+                Free
+              </div>
             </div>
             <div className='mt-2'>
               Access essential content for free. Start your journey today!
@@ -70,11 +72,13 @@ const Membership = () => {
             </ul>
           </div>
         </div>
-        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] p-6'>
+        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] border-zinc-100 p-6'>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center justify-start gap-2.5'>
               <GoldPlanIcon />
-              <div className='text-xl font-bold text-base-content'>Gold</div>
+              <div className='text-xl font-bold leading-none text-base-content'>
+                Gold
+              </div>
             </div>
             <div className='mt-2'>
               Explore exclusive articles and events. Elevate your experience
@@ -112,7 +116,7 @@ const Membership = () => {
             </ul>
           </div>
         </div>
-        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] p-6'>
+        <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] border-zinc-100 p-6'>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center justify-start gap-2.5'>
               <GoldPlusPlanIcon />
@@ -125,7 +129,7 @@ const Membership = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className='mt-2'>
               Ultimate access to all content and perks. Discover the pinnacle of
               membership.
             </div>
@@ -162,10 +166,23 @@ const Membership = () => {
           </div>
         </div>
       </Container>
-      <div className='my-14 flex justify-center'>
-        <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
-        <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
-        <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+      <div className='px-4'>
+        <div className='my-14 flex justify-center'>
+          <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+          <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+          <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+        </div>
+        <div className='mx-auto'>
+          <div className='text-3xl font-bold'>
+            Have Questions&rsquo; Explore Our FAQ Section
+          </div>
+          <p>
+            Navigate our FAQ hub for brief yet detailed responses to common
+            queries. From membership tiers to payment info, find the information
+            you need for a hassle-free experience. Can&apos;t locate what
+            you&apos;re after&rsquo; Our support team is here to help.
+          </p>
+        </div>
       </div>
     </div>
   )

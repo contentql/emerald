@@ -17,12 +17,12 @@ const Navbar = () => {
   }
 
   return (
-    <Container className='flex h-20 items-center justify-between'>
+    <Container className='flex h-20 items-center justify-between bg-base-100'>
       <Link href={'/'}>
-        <Logo />
+        <Logo className='h-5' />
       </Link>
       <nav className='hidden lg:block'>
-        <ul className='flex gap-8'>
+        <ul className='mx-auto flex w-fit gap-6 px-4'>
           <Link href={'/style-guide'}>
             Style Guide{' '}
             <span className='inline-block bg-gradient-to-r from-[#FED7AA] to-[#F97316] bg-clip-text text-transparent'>
@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className='flex gap-4'>
-        <Button className='h-[34px] w-[34px] !rounded-full px-1 hover:bg-inherit'>
+        <Button className='h-[34px] w-[34px] !rounded-full bg-neutral-content bg-opacity-5 px-1 hover:bg-inherit'>
           <SearchIcon />
         </Button>
         <Button
