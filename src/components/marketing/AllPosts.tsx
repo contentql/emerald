@@ -24,7 +24,7 @@ const AllPosts = ({ cardData }: { cardData: CardDataType[] }) => {
             className='rounded-2xl p-4 transition duration-300 ease-in-out hover:bg-secondary'>
             <div className='flex flex-col items-center justify-center gap-2.5'>
               <div className='avatar'>
-                <div className='w-24 rounded-full'>
+                <div className='relative w-24 rounded-full'>
                   <Image alt='Post' src={card?.imageUrl} fill />
                 </div>
               </div>

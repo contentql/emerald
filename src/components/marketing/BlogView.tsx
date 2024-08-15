@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const BlogView = () => {
   return (
@@ -22,15 +23,17 @@ const BlogView = () => {
           timeless quest for understanding.
         </p>
         <div className='flex items-center gap-2'>
-          <div>
+          <Link href={`/author/celestia`} className='relative h-8 w-8'>
             <Image
               alt='Author'
               src='/images/home/2-1.webp'
-              height={26}
-              width={26}
+              className='rounded-full'
+              fill
             />
-          </div>
-          <p className='ml-2'>Celestia Lilly</p>
+          </Link>
+          <Link href={`/author/celestia`}>
+            <p className='ml-2'>Celestia Lilly</p>
+          </Link>
         </div>
         <div className='avatar w-full'>
           <div className='relative h-96 w-full rounded-xl'>

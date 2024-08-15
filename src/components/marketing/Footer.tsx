@@ -11,9 +11,9 @@ const Footer = () => {
       <Container>
         <div className='flex justify-between  py-12'>
           <div className='flex flex-col gap-5'>
-            <div>
+            <Link href={'/'}>
               <Logo />
-            </div>
+            </Link>
             <p className='max-w-xs font-medium'>
               A super minimal & lightweight theme with Premium Membership and
               fully Ghost-compatible.

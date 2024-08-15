@@ -54,7 +54,7 @@ const LatestPosts = () => {
             {listOfPosts.map((post, index) => (
               <div key={index} className='flex gap-7'>
                 <div className='avatar'>
-                  <div className='relative h-[112px] w-full'>
+                  <div className='relative h-28 w-full'>
                     <Link href={`/${post?.title}`}>
                       <Image
                         src={post?.imageUrl}
@@ -79,6 +79,7 @@ const LatestPosts = () => {
                           src={post?.authorImageUrl}
                           height={26}
                           width={26}
+                          className='rounded-full'
                         />
                       </Link>
                       <Link href={`/author/${post?.authorName}`}>
@@ -120,7 +121,9 @@ const LatestPosts = () => {
           </h2>
           <div className='flex flex-col gap-12'>
             <div className='flex flex-col'>
-              <button className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
+              <Link
+                href={'/tag/arcane'}
+                className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
                 <Image
                   src={'/images/home/tags-image-1-2.webp'}
                   alt=''
@@ -129,8 +132,10 @@ const LatestPosts = () => {
                   className='rounded-full'
                 />
                 <span className='ml-2 font-semibold'>Arcane</span>
-              </button>
-              <button className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
+              </Link>
+              <Link
+                href={'/tag/arcane'}
+                className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
                 <Image
                   src={'/images/home/tags-image-1-2.webp'}
                   alt=''
@@ -139,8 +144,10 @@ const LatestPosts = () => {
                   className='rounded-full'
                 />
                 <span className='ml-2 font-semibold'>Arcane</span>
-              </button>
-              <button className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
+              </Link>
+              <Link
+                href={'/tag/arcane'}
+                className='flex items-center rounded-xl p-2 transition duration-300 ease-in-out hover:bg-secondary'>
                 <Image
                   src={'/images/home/tags-image-1-2.webp'}
                   alt=''
@@ -149,7 +156,7 @@ const LatestPosts = () => {
                   className='rounded-full'
                 />
                 <span className='ml-2 font-semibold'>Arcane</span>
-              </button>
+              </Link>
             </div>
             <div className='flex flex-col gap-4'>
               <div className='text-sm font-semibold text-secondary-content'>

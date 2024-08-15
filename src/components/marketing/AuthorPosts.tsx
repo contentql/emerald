@@ -1,4 +1,3 @@
-import Button from '../common/Button'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -54,37 +53,35 @@ const AuthorPosts = () => {
           <div key={index} className='flex gap-7'>
             <div className='avatar'>
               <div className='relative h-28 w-28 rounded-full'>
-                <Link href={post?.title}>
+                <Link href={`/${post?.title}`}>
                   <Image fill src={post?.imageUrl} alt='BlogPost' />
                 </Link>
               </div>
             </div>
             <div className='flex flex-col gap-2'>
               <div className='flex flex-col gap-2'>
-                <div className='text-xl font-semibold text-base-content'>
+                <Link
+                  href={`/${post?.title}`}
+                  className='text-xl font-semibold text-base-content'>
                   {post?.title}
-                </div>
+                </Link>
                 <p>{post?.description}</p>
               </div>
               <div className='flex gap-2'>
-                <Button
-                  key={index}
-                  className={`hover:bg-base-150 btn-secondary self-start text-xs`}>
-                  {post?.tagName}
-                </Button>
+                <Link href={`/tag/${post?.tagName}`}>
+                  <div className='badge badge-secondary badge-lg rounded-lg border border-zinc-200 text-xs font-semibold hover:opacity-80'>
+                    {post?.tagName}
+                  </div>
+                </Link>
                 {index === 0 && (
-                  <Button
-                    key={index}
-                    className={`self-start bg-warning text-xs text-error hover:bg-warning`}>
+                  <div className='badge badge-warning badge-lg rounded-lg border border-[#FEC896] text-xs font-semibold text-error '>
                     ✦ PREMIUM
-                  </Button>
+                  </div>
                 )}
                 {index === 2 && (
-                  <Button
-                    key={index}
-                    className={`btn-primary self-start text-xs hover:bg-primary`}>
+                  <div className='border-black/0.1 badge badge-primary badge-lg rounded-lg border text-xs font-semibold text-base-100'>
                     ✽ MEMBER
-                  </Button>
+                  </div>
                 )}
               </div>
             </div>

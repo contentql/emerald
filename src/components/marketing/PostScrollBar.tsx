@@ -58,12 +58,14 @@ const PostScrollBar = () => {
             <div className='flex h-16 w-full items-center justify-between sm:h-[74px]'>
               <div className='xs:gap-4 flex items-center justify-center gap-3'>
                 <div className='avatar'>
-                  <div className='w-10 rounded-full'>
+                  <div className='w-10'>
                     <Image
+                      alt='Author'
+                      fill
+                      className='rounded-full'
                       src={
-                        'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                        'https://elrond.hedwik.io/content/images/size/w1200/format/webp/2023/12/8.png'
                       }
-                      alt='avatar'
                     />
                   </div>
                 </div>
