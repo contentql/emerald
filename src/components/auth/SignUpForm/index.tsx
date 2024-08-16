@@ -78,7 +78,7 @@ const SignUpForm = () => {
 
   return (
     <div className='fixed flex h-full w-full bg-white'>
-      <div className='mx-auto flex h-full max-w-lg flex-col justify-between gap-10 lg:w-96 lg:max-w-none lg:gap-0'>
+      <div className='mx-auto flex h-full max-w-lg flex-col justify-between gap-10 px-6 sm:px-4 lg:w-96 lg:max-w-none lg:gap-0 lg:px-0'>
         <div className='mt-6'>
           <button
             onClick={() => router.push('/')}

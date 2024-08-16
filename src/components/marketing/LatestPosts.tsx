@@ -86,7 +86,9 @@ const LatestPosts = () => {
                         <p className='ml-2'>{post?.authorName}</p>
                       </Link>
                     </div>
-                    <p>{post?.description}</p>
+                    <p className='text-base font-light leading-normal tracking-[0.1px] text-neutral-content'>
+                      {post?.description}
+                    </p>
                   </div>
                   <div className='flex gap-2'>
                     <Link href={`/tag/${post?.tagName}`}>

@@ -32,8 +32,7 @@ const Membership = () => {
     },
     {
       title: 'Payment and Billing',
-      content:
-        'Get answers to your questions about payments, billing cycles, and subscription management. We&apos;ve got you covered with all the details you need to know.',
+      content: `Get answers to your questions about payments, billing cycles, and subscription management. We've got you covered with all the details you need to know.`,
     },
     {
       title: 'Accessing Premium Content',
@@ -65,7 +64,7 @@ const Membership = () => {
           Yearly
         </button>
       </div>
-      <Container className='gap-8 px-4 lg:flex'>
+      <Container className='flex select-none flex-col items-center justify-center gap-8 px-4 lg:flex lg:flex-row lg:items-start'>
         <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] border-zinc-100 p-6'>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center justify-start gap-2.5'>
@@ -224,8 +223,8 @@ const Membership = () => {
               <div
                 className='flex w-full cursor-pointer select-none items-center justify-between'
                 onClick={() => toggleAccordion(index)}>
-                <div className='text-xl font-bold'>{item.title}</div>
-                <div>
+                <div className='text-xl font-semibold'>{item.title}</div>
+                <div className='ml-4'>
                   {openIndexes[index] ? (
                     <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
                   ) : (
@@ -241,90 +240,6 @@ const Membership = () => {
             </div>
           ))}
         </div>
-        {/* <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
-          <div
-            className='flex w-full cursor-pointer items-center justify-between'
-            onClick={() => setIsOpen(!isOpen)}>
-            <div className='text-xl font-bold'>Membership Tiers</div>
-            <div>
-              {isOpen ? (
-                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
-              ) : (
-                <KeyDownIcon className='text-[#D4D4D8]' />
-              )}
-            </div>
-          </div>
-          {isOpen && (
-            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
-              Learn about our different membership tiers and find the one that
-              suits your needs best. Discover the exclusive benefits and
-              features each tier has to offer.
-            </div>
-          )}
-        </div>
-        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
-          <div
-            className='flex w-full cursor-pointer items-center justify-between'
-            onClick={() => setIsOpen(!isOpen)}>
-            <div className='text-xl font-bold'>Membership Tiers</div>
-            <div>
-              {isOpen ? (
-                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
-              ) : (
-                <KeyDownIcon className='text-[#D4D4D8]' />
-              )}
-            </div>
-          </div>
-          {isOpen && (
-            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
-              Learn about our different membership tiers and find the one that
-              suits your needs best. Discover the exclusive benefits and
-              features each tier has to offer.
-            </div>
-          )}
-        </div>
-        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
-          <div
-            className='flex w-full cursor-pointer items-center justify-between'
-            onClick={() => setIsOpen(!isOpen)}>
-            <div className='text-xl font-bold'>Membership Tiers</div>
-            <div>
-              {isOpen ? (
-                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
-              ) : (
-                <KeyDownIcon className='text-[#D4D4D8]' />
-              )}
-            </div>
-          </div>
-          {isOpen && (
-            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
-              Learn about our different membership tiers and find the one that
-              suits your needs best. Discover the exclusive benefits and
-              features each tier has to offer.
-            </div>
-          )}
-        </div>
-        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
-          <div
-            className='flex w-full cursor-pointer items-center justify-between'
-            onClick={() => setIsOpen(!isOpen)}>
-            <div className='text-xl font-bold'>Membership Tiers</div>
-            <div>
-              {isOpen ? (
-                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
-              ) : (
-                <KeyDownIcon className='text-[#D4D4D8]' />
-              )}
-            </div>
-          </div>
-          {isOpen && (
-            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
-              Learn about our different membership tiers and find the one that
-              suits your needs best. Discover the exclusive benefits and
-              features each tier has to offer.
-            </div>
-          )}
-        </div> */}
       </div>
     </div>
   )
