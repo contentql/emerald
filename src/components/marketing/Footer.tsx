@@ -48,8 +48,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-between border-t py-8'>
-          <p>© 2024 Elrond — Published with Ghost & Elrond</p>
+        <div className='flex w-full flex-col-reverse items-center justify-center gap-4 py-4 text-center sm:flex-row  sm:items-center sm:justify-between sm:gap-12'>
+          <p className='py-2 text-sm font-light text-[#3F3F46]'>
+            © 2024 Elrond — Published with Ghost & Elrond
+          </p>
           <div className='flex gap-5'>
             <Link href={'/'}>
               <Facebook />

@@ -2,7 +2,7 @@ import Container from '../common/Container'
 
 const StyleGuide = () => {
   return (
-    <Container className='xs:my-16 my-12 sm:my-24 md:max-w-2xl'>
+    <Container className='xs:my-16 my-12 px-4 sm:my-24 md:max-w-2xl lg:px-0'>
       <h1 className='mb-4 text-4xl font-bold'>Headings</h1>
       <p className='mb-6 text-lg text-secondary-content'>
         Headings are important for indexing the layout of a web page and ranking
