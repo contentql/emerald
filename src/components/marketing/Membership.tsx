@@ -4,15 +4,48 @@ import Container from '../common/Container'
 import FreePlanIcon from '../svg/FreePlanIcon'
 import GoldPlanIcon from '../svg/GoldPlanIcon'
 import GoldPlusPlanIcon from '../svg/GoldPlusPlanIcon'
+import KeyDownIcon from '../svg/KeyDownIcon'
 import ListItemTickIcon from '../svg/ListItemTickIcon'
 import { useState } from 'react'
 
 const Membership = () => {
   const [isMonthly, setIsMonthly] = useState<boolean>(true)
+  const [openIndexes, setOpenIndexes] = useState([false, false, false, false])
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndexes(prev => {
+      const newOpenIndexes = [...prev]
+      newOpenIndexes[index] = !newOpenIndexes[index]
+      return newOpenIndexes
+    })
+  }
 
   const toggleSwitch = () => {
     setIsMonthly(!isMonthly)
   }
+
+  const accordionData = [
+    {
+      title: 'Membership Tiers',
+      content:
+        'Learn about our different membership tiers and find the one that suits your needs best. Discover the exclusive benefits and features each tier has to offer.',
+    },
+    {
+      title: 'Payment and Billing',
+      content:
+        'Get answers to your questions about payments, billing cycles, and subscription management. We&apos;ve got you covered with all the details you need to know.',
+    },
+    {
+      title: 'Accessing Premium Content',
+      content:
+        'Wondering how to access premium content after becoming a member? Find step-by-step instructions and troubleshoot common issues in our Accessing Premium Content section.',
+    },
+    {
+      title: 'Cancellation and Refunds',
+      content:
+        'Need to cancel your membership or have questions about refunds? Explore our Cancellation and Refunds FAQ for a smooth and hassle-free process.',
+    },
+  ]
 
   return (
     <div className='xs:px-6 mx-auto my-16 w-full px-4 md:w-full md:max-w-screen-lg'>
@@ -32,7 +65,7 @@ const Membership = () => {
           Yearly
         </button>
       </div>
-      <Container className='gap-8 lg:flex'>
+      <Container className='gap-8 px-4 lg:flex'>
         <div className='flex h-fit w-full max-w-screen-sm flex-col gap-3 rounded-2xl border-[1.6px] border-zinc-100 p-6'>
           <div className='flex flex-col gap-2'>
             <div className='flex items-center justify-start gap-2.5'>
@@ -41,7 +74,7 @@ const Membership = () => {
                 Free
               </div>
             </div>
-            <div className='mt-2'>
+            <div className='mt-2 font-medium text-neutral-content'>
               Access essential content for free. Start your journey today!
             </div>
             <div className='my-3 flex flex-row items-center justify-start gap-2 text-3xl font-bold'>
@@ -57,7 +90,7 @@ const Membership = () => {
             </button>
           </div>
           <div className='ml-0.5 mt-3'>
-            <ul className='flex flex-col gap-3 text-[15px] text-[#3F3F46]'>
+            <ul className='flex flex-col gap-3 text-[15px] font-light text-[#3F3F46]'>
               <li>
                 <ListItemTickIcon /> Access to free content
               </li>
@@ -80,7 +113,7 @@ const Membership = () => {
                 Gold
               </div>
             </div>
-            <div className='mt-2'>
+            <div className='mt-2 font-medium text-neutral-content'>
               Explore exclusive articles and events. Elevate your experience
               with Gold.
             </div>
@@ -97,7 +130,7 @@ const Membership = () => {
             </button>
           </div>
           <div className='ml-0.5 mt-3'>
-            <ul className='flex flex-col gap-3 text-[15px] text-[#3F3F46]'>
+            <ul className='flex flex-col gap-3 text-[15px] font-light text-[#3F3F46]'>
               <li>
                 <ListItemTickIcon /> Access to premium content
               </li>
@@ -129,7 +162,7 @@ const Membership = () => {
                 </div>
               </div>
             </div>
-            <div className='mt-2'>
+            <div className='mt-2 font-normal text-neutral-content'>
               Ultimate access to all content and perks. Discover the pinnacle of
               membership.
             </div>
@@ -146,7 +179,7 @@ const Membership = () => {
             </button>
           </div>
           <div className='ml-0.5 mt-3'>
-            <ul className='flex flex-col gap-3 text-[15px] text-[#3F3F46]'>
+            <ul className='flex flex-col gap-3 text-[15px] font-light text-[#3F3F46]'>
               <li>
                 <ListItemTickIcon /> Access to Golden Plus content
               </li>
@@ -166,23 +199,132 @@ const Membership = () => {
           </div>
         </div>
       </Container>
-      <div className='px-4'>
+      <div className='mx-auto my-12 flex flex-col items-center justify-start gap-2 px-4 md:max-w-2xl'>
         <div className='my-14 flex justify-center'>
           <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
           <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
           <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
         </div>
         <div className='mx-auto'>
-          <div className='text-3xl font-bold'>
-            Have Questions&rsquo; Explore Our FAQ Section
+          <div className='mb-4 text-3xl font-bold'>
+            Have Questions? Explore Our FAQ Section
           </div>
-          <p>
+          <p className='mb-6 text-lg font-light text-[#3F3F46]'>
             Navigate our FAQ hub for brief yet detailed responses to common
             queries. From membership tiers to payment info, find the information
             you need for a hassle-free experience. Can&apos;t locate what
-            you&apos;re after&rsquo; Our support team is here to help.
+            you&apos;re after? Our support team is here to help.
           </p>
         </div>
+        <div className='w-full'>
+          {accordionData.map((item, index) => (
+            <div
+              key={index}
+              className='mt-8 w-full select-none rounded-lg border border-[#E4E4E7] p-6'>
+              <div
+                className='flex w-full cursor-pointer select-none items-center justify-between'
+                onClick={() => toggleAccordion(index)}>
+                <div className='text-xl font-bold'>{item.title}</div>
+                <div>
+                  {openIndexes[index] ? (
+                    <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
+                  ) : (
+                    <KeyDownIcon className='text-[#D4D4D8]' />
+                  )}
+                </div>
+              </div>
+              {openIndexes[index] && (
+                <div className='mt-4 select-none text-[17px] font-light leading-7 text-[#3F3F46]'>
+                  {item.content}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        {/* <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
+          <div
+            className='flex w-full cursor-pointer items-center justify-between'
+            onClick={() => setIsOpen(!isOpen)}>
+            <div className='text-xl font-bold'>Membership Tiers</div>
+            <div>
+              {isOpen ? (
+                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
+              ) : (
+                <KeyDownIcon className='text-[#D4D4D8]' />
+              )}
+            </div>
+          </div>
+          {isOpen && (
+            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
+              Learn about our different membership tiers and find the one that
+              suits your needs best. Discover the exclusive benefits and
+              features each tier has to offer.
+            </div>
+          )}
+        </div>
+        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
+          <div
+            className='flex w-full cursor-pointer items-center justify-between'
+            onClick={() => setIsOpen(!isOpen)}>
+            <div className='text-xl font-bold'>Membership Tiers</div>
+            <div>
+              {isOpen ? (
+                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
+              ) : (
+                <KeyDownIcon className='text-[#D4D4D8]' />
+              )}
+            </div>
+          </div>
+          {isOpen && (
+            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
+              Learn about our different membership tiers and find the one that
+              suits your needs best. Discover the exclusive benefits and
+              features each tier has to offer.
+            </div>
+          )}
+        </div>
+        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
+          <div
+            className='flex w-full cursor-pointer items-center justify-between'
+            onClick={() => setIsOpen(!isOpen)}>
+            <div className='text-xl font-bold'>Membership Tiers</div>
+            <div>
+              {isOpen ? (
+                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
+              ) : (
+                <KeyDownIcon className='text-[#D4D4D8]' />
+              )}
+            </div>
+          </div>
+          {isOpen && (
+            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
+              Learn about our different membership tiers and find the one that
+              suits your needs best. Discover the exclusive benefits and
+              features each tier has to offer.
+            </div>
+          )}
+        </div>
+        <div className='w-full rounded-lg border border-[#E4E4E7] p-6'>
+          <div
+            className='flex w-full cursor-pointer items-center justify-between'
+            onClick={() => setIsOpen(!isOpen)}>
+            <div className='text-xl font-bold'>Membership Tiers</div>
+            <div>
+              {isOpen ? (
+                <KeyDownIcon className='rotate-180 text-[#D4D4D8]' />
+              ) : (
+                <KeyDownIcon className='text-[#D4D4D8]' />
+              )}
+            </div>
+          </div>
+          {isOpen && (
+            <div className='mt-4 text-[17px] font-light leading-7 text-[#3F3F46]'>
+              Learn about our different membership tiers and find the one that
+              suits your needs best. Discover the exclusive benefits and
+              features each tier has to offer.
+            </div>
+          )}
+        </div> */}
       </div>
     </div>
   )

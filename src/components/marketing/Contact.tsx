@@ -45,7 +45,7 @@ const Contact = () => {
                 cols={30}
                 rows={3}
                 placeholder='Your message'
-                className='text-md focus: block w-full rounded-md border-0 bg-transparent px-3 py-1.5 leading-8 shadow-sm ring-1 ring-zinc-300 transition-shadow duration-300 focus:ring-2 focus:ring-primary focus-visible:outline-none'></textarea>
+                className='text-md focus: block max-h-48 min-h-[100px] w-full resize-y rounded-md border-0 bg-transparent px-3 py-1.5 leading-8 shadow-sm ring-1 ring-zinc-300 transition-shadow duration-300 focus:ring-2 focus:ring-primary focus-visible:outline-none'></textarea>
               <button
                 type='submit'
                 className='h-10 max-h-10 min-h-[40px] w-full rounded-md bg-primary text-[14px] font-medium text-white'>

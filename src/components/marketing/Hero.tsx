@@ -34,14 +34,14 @@ const Hero = ({
           </div>
           <div className='text-center'>
             {title !== '' ? (
-              <div className='text-2xl font-bold leading-none sm:text-2xl'>
+              <div className='text-2xl font-semibold leading-none sm:text-2xl'>
                 {title}
               </div>
             ) : (
               ''
             )}
             <p
-              className={`max-w-sm text-center ${pathName === '/' ? 'text-lg font-medium leading-7 text-base-content' : 'mt-4 text-base font-normal text-[#3F3F46]'}`}>
+              className={`max-w-sm text-center ${pathName === '/' ? 'text-lg font-medium leading-7 text-base-content' : 'mt-4 text-base font-light text-[#3F3F46]'}`}>
               {subTitle}
             </p>
           </div>
