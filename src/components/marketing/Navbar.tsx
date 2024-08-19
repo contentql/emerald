@@ -3,6 +3,7 @@
 import Button from '../common/Button'
 import Container from '../common/Container'
 import DropDown from '../common/DropDown'
+import LockIcon from '../svg/LockIcon'
 import Logo from '../svg/Logo'
 import MenuIcon from '../svg/MenuIcon'
 import SearchIcon from '../svg/SearchIcon'
@@ -18,12 +19,14 @@ const Navbar = () => {
   }
 
   return (
-    <Container className='flex h-20 items-center justify-between bg-base-100'>
-      <Link href={'/'}>
-        <Logo className='h-5' />
-      </Link>
-      <nav className='hidden lg:block'>
-        <ul className='mx-auto flex w-fit gap-6 px-4 text-[15px] text-[#3F3F46]'>
+    <Container className='flex h-20 items-center justify-between bg-base-100 px-4 xl:px-0'>
+      <div className='flex-[1] justify-start'>
+        <Link href={'/'}>
+          <Logo className='h-5 w-fit' />
+        </Link>
+      </div>
+      <nav className='mx-auto hidden h-full w-fit select-none items-center justify-center gap-6 px-4 lg:flex'>
+        <ul className='mx-auto flex w-fit gap-6 px-4 text-[15px] font-[450] text-[#3F3F46]'>
           <Link
             href={'/style-guide'}
             className={
@@ -61,14 +64,16 @@ const Navbar = () => {
           <DropDown />
         </ul>
       </nav>
-      <div className='flex gap-4'>
+      <div className='xs:gap-x-4 flex h-full w-fit min-w-fit flex-[1] items-center justify-end gap-x-3'>
         <Button className='h-[34px] w-[34px] !rounded-full bg-neutral-content bg-opacity-5 px-1 hover:bg-inherit'>
           <SearchIcon />
         </Button>
         <Button
           className='h-[34px] !rounded-full bg-primary font-medium text-white'
           onClick={handleSignPage}>
-          <span className='text-inherit'>✦</span> Sign in
+          <span className='hidden text-inherit sm:inline'>✦</span>
+          <span className='hidden sm:inline'> Sign in</span>
+          <LockIcon className='inline sm:hidden' />
         </Button>
         <Button className='h-[34px] w-[34px] !rounded-full p-0 lg:hidden'>
           <MenuIcon />

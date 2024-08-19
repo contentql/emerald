@@ -6,9 +6,11 @@ import Twitter from '../svg/Twitter'
 import Link from 'next/link'
 
 const Footer = () => {
+  const x =
+    'w-full md:max-w-screen-container flex flex-col md:flex-row justify-between'
   return (
     <div className='border-t'>
-      <Container className='px-4 pt-2 md:max-w-[940px]'>
+      <Container className='md:max-w-screen-[940px] w-full px-4 pt-2'>
         <div className='flex flex-col justify-between gap-6 py-8 sm:py-12 md:flex-row md:gap-5'>
           <div className='flex flex-col justify-start gap-5'>
             <Link href={'/'}>

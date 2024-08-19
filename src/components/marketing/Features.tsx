@@ -51,23 +51,25 @@ const featuresList = [
 
 const Features = () => {
   return (
-    <Container className='my-12 sm:my-24 md:max-w-2xl'>
+    <Container className='my-12 px-4 sm:my-24 md:max-w-2xl lg:px-0'>
       {featuresList?.map((feature, index) => (
         <div key={index}>
-          <div className='mb-4 text-3xl font-bold'>{feature?.title}</div>
+          <div className='mb-4 text-[1.72rem] font-bold'>{feature?.title}</div>
           <ul className='list-disc'>
             {feature?.features?.map((featurePoint, index) => (
-              <li key={index} className='my-3 ml-5 text-lg'>
+              <li key={index} className='my-3 ml-5 text-lg text-[#3F3F46]'>
                 {featurePoint?.featurePoint}
               </li>
             ))}
           </ul>
           {/* <hr className='my-14'></hr> */}
-          <div className='my-14 flex justify-center'>
-            <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
-            <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
-            <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
-          </div>
+          {index < featuresList.length - 1 && (
+            <div className='my-14 flex justify-center'>
+              <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+              <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+              <span className='mx-2 inline-block h-1.5 w-1.5 rounded-full bg-base-300'></span>
+            </div>
+          )}
         </div>
       ))}
     </Container>

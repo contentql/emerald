@@ -208,7 +208,7 @@ const Membership = () => {
           <div className='mb-4 text-3xl font-bold'>
             Have Questions? Explore Our FAQ Section
           </div>
-          <p className='mb-6 text-lg font-light text-[#3F3F46]'>
+          <p className='text-lg font-light text-[#3F3F46]'>
             Navigate our FAQ hub for brief yet detailed responses to common
             queries. From membership tiers to payment info, find the information
             you need for a hassle-free experience. Can&apos;t locate what

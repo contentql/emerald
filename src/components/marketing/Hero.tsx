@@ -19,7 +19,7 @@ const Hero = ({
     <div className='bg-base-100'>
       <Container>
         <div
-          className={`flex flex-col items-center gap-6 ${pathName === '/' ? 'py-16' : 'pb-16 pt-14'}`}>
+          className={`flex flex-col items-center gap-6 px-4 ${pathName === '/' ? 'py-16' : 'pb-16 pt-14'}`}>
           <div className='avatar'>
             <div
               className={`relative ${pathName === '/' ? 'w-20' : 'w-24'} rounded-full`}>
@@ -34,14 +34,14 @@ const Hero = ({
           </div>
           <div className='text-center'>
             {title !== '' ? (
-              <div className='text-2xl font-semibold leading-none sm:text-2xl'>
+              <div className='text-xl font-semibold leading-tight sm:text-2xl sm:leading-none'>
                 {title}
               </div>
             ) : (
               ''
             )}
             <p
-              className={`max-w-sm text-center ${pathName === '/' ? 'text-lg font-medium leading-7 text-base-content' : 'mt-4 text-base font-light text-[#3F3F46]'}`}>
+              className={`max-w-sm text-center leading-[1.48rem] ${pathName === '/' ? 'text-base font-[450] leading-7 text-base-content sm:text-lg' : 'mt-4 text-base font-light text-[#3F3F46]'}`}>
               {subTitle}
             </p>
           </div>

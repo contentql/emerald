@@ -5,7 +5,7 @@ export default function Example() {
   return (
     <Menu as='div' className='relative inline-block text-left'>
       <div>
-        <MenuButton>
+        <MenuButton className='flex items-center gap-1'>
           More
           <KeyDownIcon />
         </MenuButton>

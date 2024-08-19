@@ -4,60 +4,66 @@ import Link from 'next/link'
 
 const FeaturedPost = () => {
   return (
-    <Container className='md:max-w-screen-container w-full'>
-      <div className='mx-auto my-20 space-y-4'>
-        <h2 className='text-sm font-semibold text-secondary-content'>
-          FEATURED POST
+    <Container className='sm:my12 my-8 w-full px-4 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
+      <div className='xs:my-10 mx-auto my-8 flex w-full flex-col gap-4 px-4 sm:my-12 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
+        <h2 className='text-four mb-1 text-sm font-medium uppercase tracking-widest text-secondary-content'>
+          featured post
         </h2>
-        <div className='flex w-full items-center gap-6 md:gap-10'>
+        <div className='flex w-full flex-col items-center gap-6 md:flex-row md:gap-10'>
           <Link
             href={'/Enchanted Realms of Mushroom Monarchies'}
             className='relative h-[300px] w-1/2'>
             <Image
               alt='Featured Post'
               src='/images/home/4-2.webp'
-              className='rounded-xl'
+              className='rounded-xl object-cover object-center'
               fill
             />
           </Link>
           <div className='flex w-1/2 flex-col gap-4'>
-            <div className='flex flex-col gap-4'>
-              <Link href={'/Enchanted Realms of Mushroom Monarchies'}>
-                <h3 className='text-2xl font-semibold text-base-content'>
-                  Enchanted Realms of Mushroom Monarchies
-                </h3>
-              </Link>
-              <div className='flex items-center gap-2'>
-                <div className='flex -space-x-2'>
-                  <Link href={'/author/Elderich'}>
-                    <Image
-                      alt='Author 1'
-                      src='/images/home/2-1.webp'
-                      height={26}
-                      width={26}
-                      className='rounded-full transition-transform duration-200  hover:transform'
-                    />
-                  </Link>
-                  <Link href={'/author/parcia miles'}>
-                    <Image
-                      alt='Author 2'
-                      src='/images/home/2-1.webp'
-                      height={26}
-                      width={26}
-                      className='rounded-full transition-transform duration-200  hover:transform'
-                    />
-                  </Link>
-                </div>
+            <Link href={'/Enchanted Realms of Mushroom Monarchies'}>
+              <h3 className='text-2xl font-semibold text-base-content'>
+                Enchanted Realms of Mushroom Monarchies
+              </h3>
+            </Link>
+            <div className='flex items-center gap-2'>
+              <div className='flex -space-x-2'>
                 <Link href={'/author/Elderich'}>
-                  <p className='ml-3'>Elderich & Parcia Mills</p>
+                  <Image
+                    alt='Author 1'
+                    src='/images/home/2-1.webp'
+                    height={26}
+                    width={26}
+                    className='rounded-full transition-transform duration-200  hover:transform'
+                  />
+                </Link>
+                <Link href={'/author/parcia miles'}>
+                  <Image
+                    alt='Author 2'
+                    src='/images/home/2-1.webp'
+                    height={26}
+                    width={26}
+                    className='rounded-full transition-transform duration-200  hover:transform'
+                  />
                 </Link>
               </div>
-              <p className='text-neutral-content'>
-                This journey transcends ordinary boundaries, inviting you to
-                explore a world where magic emanates from every cap and the air
-                is alive with the hum of mystical.
-              </p>
+              <Link href={'/author/Elderich'}>
+                <p className='ml-3 text-sm'>
+                  <span className='text-[#3F3F46] hover:text-primary'>
+                    Elderich
+                  </span>{' '}
+                  &{' '}
+                  <span className='text-[#3F3F46] hover:text-primary'>
+                    Parcia Mills
+                  </span>
+                </p>
+              </Link>
             </div>
+            <p className='line-clamp-3 w-full text-base font-light leading-[1.48] tracking-[0.1px] text-neutral-content'>
+              This journey transcends ordinary boundaries, inviting you to
+              explore a world where magic emanates from every cap and the air is
+              alive with the hum of mystical kingdoms.
+            </p>
             <Link href={'/tag/arcane'}>
               <div className='badge badge-secondary badge-lg rounded-lg border border-zinc-200 text-xs font-semibold hover:opacity-80'>
                 ARCANE
