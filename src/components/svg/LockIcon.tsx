@@ -16,7 +16,7 @@ const LockIcon: React.FC<LockIconProps> = ({ className }) => {
       <path
         d='M4.5 6.5v-3a3 3 0 016 0V4m-8 2.5h10a1 1 0 011 1v6a1 1 0 01-1 1h-10a1 1 0 01-1-1v-6a1 1 0 011-1z'
         stroke='currentColor'
-        stroke-width='1.3px'></path>
+        strokeWidth='1.3px'></path>
     </svg>
   )
 }
