@@ -4,25 +4,32 @@ import Link from 'next/link'
 
 const FeaturedPost = () => {
   return (
-    <Container className='sm:my12 my-8 w-full px-4 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
-      <div className='xs:my-10 mx-auto my-8 flex w-full flex-col gap-4 px-4 sm:my-12 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
+    <Container className='my-8 w-full px-4 sm:my-12 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
+      <div className='xs:my-10 mx-auto my-8 flex w-full flex-col gap-4 sm:my-12 md:my-16 md:max-w-[940px] lg:my-20 lg:px-0'>
         <h2 className='text-four mb-1 text-sm font-medium uppercase tracking-widest text-secondary-content'>
           featured post
         </h2>
         <div className='flex w-full flex-col items-center gap-6 md:flex-row md:gap-10'>
-          <Link
+          {/* <Link
             href={'/Enchanted Realms of Mushroom Monarchies'}
-            className='relative h-[300px] w-1/2'>
+            className='relative h-fit w-full md:basis-3/5'>
             <Image
               alt='Featured Post'
               src='/images/home/4-2.webp'
               className='rounded-xl object-cover object-center'
               fill
             />
-          </Link>
-          <div className='flex w-1/2 flex-col gap-4'>
+          </Link> */}
+          <div className='avatar w-full'>
+            <div className='relative h-60 w-full rounded-xl md:h-80'>
+              <Link href={'/Enchanted Realms of Mushroom Monarchies'}>
+                <Image alt='/Featured Post' fill src='/images/home/4-2.webp' />
+              </Link>
+            </div>
+          </div>
+          <div className='flex w-full flex-col gap-4'>
             <Link href={'/Enchanted Realms of Mushroom Monarchies'}>
-              <h3 className='text-2xl font-semibold text-base-content'>
+              <h3 className='xs:text-2xl text-xl font-semibold text-base-content'>
                 Enchanted Realms of Mushroom Monarchies
               </h3>
             </Link>
