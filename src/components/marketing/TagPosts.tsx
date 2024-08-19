@@ -1,6 +1,9 @@
+'use client'
+
 import Button from '../common/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const listOfPosts = [
   {
@@ -40,9 +43,46 @@ const listOfPosts = [
       'In the celestial ballet of myth, the Aureate Serpents golden scales shimmer as heroes navigate cosmic realms. From East to West, the universal allure of mythical',
     tagName: 'ARCANE',
   },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Aureate Serpent and Celestial Sojourn',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description:
+      'In the celestial ballet of myth, the Aureate Serpents golden scales shimmer as heroes navigate cosmic realms. From East to West, the universal allure of mythical',
+    tagName: 'ARCANE',
+  },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Aureate Serpent and Celestial Sojourn',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description:
+      'In the celestial ballet of myth, the Aureate Serpents golden scales shimmer as heroes navigate cosmic realms. From East to West, the universal allure of mythical',
+    tagName: 'ARCANE',
+  },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Aureate Serpent and Celestial Sojourn',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description:
+      'In the celestial ballet of myth, the Aureate Serpents golden scales shimmer as heroes navigate cosmic realms. From East to West, the universal allure of mythical',
+    tagName: 'ARCANE',
+  },
 ]
 
 const TagPosts = () => {
+  const [noOfPosts, setNoOfPosts] = useState(6)
+  const [loading, setLoading] = useState(false)
+
+  const loadPosts = () => {
+    setLoading(true)
+    setTimeout(() => {
+      setNoOfPosts(noOfPosts + 6)
+      setLoading(false)
+    }, 1000)
+  }
   return (
     <div className='mx-auto my-16 flex w-full flex-col gap-5 md:max-w-screen-sm'>
       <div className='flex'>
@@ -55,7 +95,7 @@ const TagPosts = () => {
         </div>
       </div>
       <div className='space-y-14'>
-        {listOfPosts.map((post, index) => (
+        {listOfPosts.slice(0, noOfPosts).map((post, index) => (
           <div key={index} className='flex gap-7'>
             <div className='avatar'>
               <Link href={`/${post?.title}`} className='relative h-28 w-28'>
@@ -114,11 +154,18 @@ const TagPosts = () => {
           </div>
         ))}
       </div>
-      <div className='flex items-center justify-center'>
-        <Button className='hover:bg-base-150 btn-secondary !rounded-full text-xs'>
-          LOAD MORE
-        </Button>
-      </div>
+      {listOfPosts.length <= noOfPosts ? (
+        ''
+      ) : (
+        <div className='mt-8 flex items-center justify-center'>
+          <Button
+            onClick={loadPosts}
+            className='hover:bg-base-150 btn-secondary !rounded-full text-xs uppercase'
+            disabled={loading}>
+            {loading ? 'Loading...' : 'Load More'}
+          </Button>
+        </div>
+      )}
     </div>
   )
 }
