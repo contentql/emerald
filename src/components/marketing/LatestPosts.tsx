@@ -1,7 +1,10 @@
+'use client'
+
 import Button from '../common/Button'
 import Container from '../common/Container'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const listOfPosts = [
   {
@@ -52,9 +55,51 @@ const listOfPosts = [
     description: `This journey transcends ordinary boundaries, inviting you to explore a world where magic emanates from every cap and the air is alive with the hum of mystical kingdoms.`,
     tagName: 'ARCANE',
   },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Enchanted Realms of Mushroom Monarchies',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description: `This journey transcends ordinary boundaries, inviting you to explore a world where magic emanates from every cap and the air is alive with the hum of mystical kingdoms.`,
+    tagName: 'ARCANE',
+  },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Enchanted Realms of Mushroom Monarchies',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description: `This journey transcends ordinary boundaries, inviting you to explore a world where magic emanates from every cap and the air is alive with the hum of mystical kingdoms.`,
+    tagName: 'ARCANE',
+  },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Enchanted Realms of Mushroom Monarchies',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description: `This journey transcends ordinary boundaries, inviting you to explore a world where magic emanates from every cap and the air is alive with the hum of mystical kingdoms.`,
+    tagName: 'ARCANE',
+  },
+  {
+    imageUrl: '/images/home/8.webp',
+    title: 'Enchanted Realms of Mushroom Monarchies',
+    authorImageUrl: '/images/home/2-1.webp',
+    authorName: 'Celestia Lilly',
+    description: `This journey transcends ordinary boundaries, inviting you to explore a world where magic emanates from every cap and the air is alive with the hum of mystical kingdoms.`,
+    tagName: 'ARCANE',
+  },
 ]
 
 const LatestPosts = () => {
+  const [noOfPosts, setNoOfPosts] = useState(6)
+  const [loading, setLoading] = useState(false)
+
+  const loadPosts = () => {
+    setLoading(true)
+    setTimeout(() => {
+      setNoOfPosts(noOfPosts + 6)
+      setLoading(false)
+    }, 1000)
+  }
   return (
     <Container className='md:max-w-screen-container w-full px-4 sm:my-8 lg:my-12 lg:px-0'>
       <div className='relative mx-auto my-4 flex w-full flex-col items-start gap-16 sm:my-12 md:max-w-[940px] lg:my-16 lg:flex-row lg:gap-16'>
@@ -63,7 +108,7 @@ const LatestPosts = () => {
             Latest Post
           </h2>
           <div className='flex w-full flex-col gap-10'>
-            {listOfPosts.map((post, index) => (
+            {listOfPosts.slice(0, noOfPosts).map((post, index) => (
               <div
                 key={index}
                 className='flex w-full flex-col items-start gap-6 sm:flex-row'>
@@ -132,11 +177,18 @@ const LatestPosts = () => {
               </div>
             ))}
           </div>
-          <div className='mt-8 flex items-center justify-center'>
-            <Button className='hover:bg-base-150 btn-secondary !rounded-full text-xs uppercase'>
-              load more
-            </Button>
-          </div>
+          {listOfPosts.length <= noOfPosts ? (
+            ''
+          ) : (
+            <div className='mt-8 flex items-center justify-center'>
+              <Button
+                onClick={loadPosts}
+                className='hover:bg-base-150 btn-secondary !rounded-full text-xs uppercase'
+                disabled={loading}>
+                {loading ? 'Loading...' : 'Load More'}
+              </Button>
+            </div>
+          )}
         </div>
         <div className='relative my-8 flex h-full w-full flex-shrink-0 basis-full flex-col items-center gap-10 sm:my-10 md:sticky md:top-6 md:my-0 md:basis-[30%] md:items-start'>
           <div className='flex h-fit w-full flex-col gap-8 sm:max-w-md md:gap-4'>
