@@ -6,7 +6,7 @@ const GoldPlanIcon = () => {
       viewBox='0 0 300 300'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_85_171)'>
+      <g clipPath='url(#clip0_85_171)'>
         <circle
           cx='149.894'
           cy='149.894'
@@ -21,8 +21,8 @@ const GoldPlanIcon = () => {
             rx='125'
             ry='125'
             fill='#2CA4C6'
-            fill-opacity='0.51'
-            // style='fill:#2CA4C6;fill:color(display-p3 0.1717 0.6448 0.7759);fill-opacity:0.51;'
+            fillOpacity='0.51'
+            // style='fill:#2CA4C6;fill:color(display-p3 0.1717 0.6448 0.7759);fillOpacity:0.51;'
           />
         </g>
         <g
@@ -46,8 +46,8 @@ const GoldPlanIcon = () => {
           <path
             d='M170.408 123.506L163.065 95.2833C159.561 81.816 140.439 81.816 136.935 95.2833L129.592 123.506C128.816 126.487 126.487 128.816 123.506 129.592L95.2833 136.935C81.816 140.439 81.816 159.561 95.2833 163.065L123.506 170.408C126.487 171.184 128.816 173.513 129.592 176.494L136.935 204.717C140.439 218.184 159.561 218.184 163.065 204.717L170.408 176.494C171.184 173.513 173.513 171.184 176.494 170.408L204.717 163.065C218.184 159.561 218.184 140.439 204.717 136.935L176.494 129.592C173.513 128.816 171.184 126.487 170.408 123.506Z'
             stroke='black'
-            stroke-opacity='0.09'
-            // style='stroke:black;stroke-opacity:0.09;'
+            strokeOpacity='0.09'
+            // style='stroke:black;strokeOpacity:0.09;'
             strokeWidth='5'
           />
         </g>
@@ -60,8 +60,8 @@ const GoldPlanIcon = () => {
           width='358'
           height='358'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'>
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          colorInterpolationFilters='sRGB'>
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -81,13 +81,13 @@ const GoldPlanIcon = () => {
           y2='300'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#C5F1F0'
-            // style='stop-color:#C5F1F0;stop-color:color(display-p3 0.7725 0.9451 0.9412);stop-opacity:1;'
+            stopColor='#C5F1F0'
+            // style='stopColor:#C5F1F0;stopColor:color(display-p3 0.7725 0.9451 0.9412);stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#81D0F2'
-            // style='stop-color:#81D0F2;stop-color:color(display-p3 0.5059 0.8157 0.9490);stop-opacity:1;'
+            stopColor='#81D0F2'
+            // style='stopColor:#81D0F2;stopColor:color(display-p3 0.5059 0.8157 0.9490);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -98,21 +98,21 @@ const GoldPlanIcon = () => {
           y2='428.661'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='0.0001'
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0'
-            // style='stop-color:none;stop-opacity:0;'
+            stopColor='white'
+            stopOpacity='0'
+            // style='stopColor:none;stopOpacity:0;'
           />
         </linearGradient>
         <linearGradient
@@ -123,14 +123,14 @@ const GoldPlanIcon = () => {
           y2='245'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            //   style='stop-color:white;stop-opacity:1;'
+            stopColor='white'
+            //   style='stopColor:white;stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0.77'
-            // style='stop-color:white;stop-opacity:0.77;'
+            stopColor='white'
+            stopOpacity='0.77'
+            // style='stopColor:white;stopOpacity:0.77;'
           />
         </linearGradient>
         <clipPath id='clip0_85_171'>
@@ -139,7 +139,7 @@ const GoldPlanIcon = () => {
             height='300'
             rx='150'
             fill='white'
-            // style='fill:white;fill-opacity:1;'
+            // style='fill:white;fillOpacity:1;'
           />
         </clipPath>
       </defs>

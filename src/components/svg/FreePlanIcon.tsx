@@ -6,7 +6,7 @@ const FreePlanIcon = () => {
       viewBox='0 0 300 300'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_84_5)'>
+      <g clipPath='url(#clip0_84_5)'>
         <circle
           cx='149.894'
           cy='149.894'
@@ -22,7 +22,7 @@ const FreePlanIcon = () => {
             ry='125'
             fill='#8237FF'
             fillOpacity='0.55'
-            // style='fill:#8237FF;fill:color(display-p3 0.5118 0.2167 1.0000);fill-opacity:0.55;'
+            // style='fill:#8237FF;fill:color(display-p3 0.5118 0.2167 1.0000);fillOpacity:0.55;'
           />
         </g>
         <g
@@ -46,8 +46,8 @@ const FreePlanIcon = () => {
           <path
             d='M175.671 132.887L162.944 89.9095C159.128 77.0202 140.872 77.0202 137.056 89.9096L124.329 132.887C123.948 134.174 123.268 135.352 122.344 136.325L91.4879 168.835C82.2338 178.585 91.3615 194.395 104.432 191.255L148.015 180.788C149.32 180.474 150.68 180.474 151.985 180.788L195.568 191.255C208.639 194.395 217.766 178.585 208.512 168.835L177.656 136.325C176.732 135.352 176.052 134.174 175.671 132.887Z'
             stroke='black'
-            stroke-opacity='0.09'
-            // style='stroke:black;stroke-opacity:0.09;'
+            strokeOpacity='0.09'
+            // style='stroke:black;strokeOpacity:0.09;'
             strokeWidth='5'
           />
         </g>
@@ -60,8 +60,8 @@ const FreePlanIcon = () => {
           width='382'
           height='382'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'>
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          colorInterpolationFilters='sRGB'>
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -81,13 +81,13 @@ const FreePlanIcon = () => {
           y2='300'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#BC94FF'
-            // style='stop-color:#BC94FF;stop-color:color(display-p3 0.7373 0.5804 1.0000);stop-opacity:1;'
+            stopColor='#BC94FF'
+            // style='stopColor:#BC94FF;stopColor:color(display-p3 0.7373 0.5804 1.0000);stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#9F66FF'
-            // style='stop-color:#9F66FF;stop-color:color(display-p3 0.6235 0.4000 1.0000);stop-opacity:1;'
+            stopColor='#9F66FF'
+            // style='stopColor:#9F66FF;stopColor:color(display-p3 0.6235 0.4000 1.0000);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -98,21 +98,21 @@ const FreePlanIcon = () => {
           y2='428.661'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='0.0001'
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0'
-            // style='stop-color:none;stop-opacity:0;'
+            stopColor='white'
+            stopOpacity='0'
+            // style='stopColor:none;stopOpacity:0;'
           />
         </linearGradient>
         <linearGradient
@@ -123,14 +123,14 @@ const FreePlanIcon = () => {
           y2='245'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            //    style='stop-color:white;stop-opacity:1;'
+            stopColor='white'
+            //    style='stopColor:white;stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0.77'
-            // style='stop-color:white;stop-opacity:0.77;'
+            stopColor='white'
+            stopOpacity='0.77'
+            // style='stopColor:white;stopOpacity:0.77;'
           />
         </linearGradient>
         <clipPath id='clip0_84_5'>
@@ -139,7 +139,7 @@ const FreePlanIcon = () => {
             height='300'
             rx='150'
             fill='white'
-            // style='fill:white;fill-opacity:1;'
+            // style='fill:white;fillOpacity:1;'
           />
         </clipPath>
       </defs>

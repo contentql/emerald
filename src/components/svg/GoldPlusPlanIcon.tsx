@@ -6,7 +6,7 @@ const GoldPlusPlanIcon = () => {
       viewBox='0 0 300 300'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_85_179)'>
+      <g clipPath='url(#clip0_85_179)'>
         <circle
           cx='149.894'
           cy='149.894'
@@ -21,8 +21,8 @@ const GoldPlusPlanIcon = () => {
             rx='125'
             ry='125'
             fill='#FF7A4E'
-            fill-opacity='0.68'
-            // style='fill:#FF7A4E;fill:color(display-p3 1.0000 0.4784 0.3059);fill-opacity:0.68;'
+            fillOpacity='0.68'
+            // style='fill:#FF7A4E;fill:color(display-p3 1.0000 0.4784 0.3059);fillOpacity:0.68;'
           />
         </g>
         <g
@@ -46,8 +46,8 @@ const GoldPlusPlanIcon = () => {
           <path
             d='M167.996 115.68L163.172 94.2108C160.013 80.1573 139.987 80.1573 136.828 94.2108L132.004 115.68C131.067 119.851 127.177 122.677 122.921 122.279L101.012 120.233C86.67 118.894 80.4813 137.941 92.8711 145.287L111.798 156.51C115.476 158.69 116.961 163.262 115.268 167.188L106.552 187.392C100.846 200.618 117.049 212.39 127.864 202.876L144.386 188.344C147.596 185.52 152.404 185.52 155.614 188.344L172.136 202.876C182.951 212.39 199.154 200.618 193.448 187.392L184.732 167.188C183.039 163.262 184.524 158.69 188.202 156.51L207.129 145.287C219.519 137.941 213.33 118.894 198.988 120.233L177.079 122.279C172.823 122.677 168.933 119.851 167.996 115.68Z'
             stroke='black'
-            stroke-opacity='0.09'
-            // style='stroke:black;stroke-opacity:0.09;'
+            strokeOpacity='0.09'
+            // style='stroke:black;strokeOpacity:0.09;'
             strokeWidth='5'
           />
         </g>
@@ -60,8 +60,8 @@ const GoldPlusPlanIcon = () => {
           width='382'
           height='382'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'>
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          colorInterpolationFilters='sRGB'>
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -81,13 +81,13 @@ const GoldPlusPlanIcon = () => {
           y2='300'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='#FFBA89'
-            // style='stop-color:#FFBA89;stop-color:color(display-p3 1.0000 0.7294 0.5373);stop-opacity:1;'
+            stopColor='#FFBA89'
+            // style='stopColor:#FFBA89;stopColor:color(display-p3 1.0000 0.7294 0.5373);stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='#FF926E'
-            // style='stop-color:#FF926E;stop-color:color(display-p3 1.0000 0.5725 0.4314);stop-opacity:1;'
+            stopColor='#FF926E'
+            // style='stopColor:#FF926E;stopColor:color(display-p3 1.0000 0.5725 0.4314);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -98,21 +98,21 @@ const GoldPlusPlanIcon = () => {
           y2='428.661'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='0.0001'
-            stop-color='white'
-            stop-opacity='0.67'
-            // style='stop-color:white;stop-opacity:0.67;'
+            stopColor='white'
+            stopOpacity='0.67'
+            // style='stopColor:white;stopOpacity:0.67;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0'
-            // style='stop-color:none;stop-opacity:0;'
+            stopColor='white'
+            stopOpacity='0'
+            // style='stopColor:none;stopOpacity:0;'
           />
         </linearGradient>
         <linearGradient
@@ -123,14 +123,14 @@ const GoldPlusPlanIcon = () => {
           y2='253'
           gradientUnits='userSpaceOnUse'>
           <stop
-            stop-color='white'
-            //   style='stop-color:white;stop-opacity:1;'
+            stopColor='white'
+            //   style='stopColor:white;stopOpacity:1;'
           />
           <stop
             offset='1'
-            stop-color='white'
-            stop-opacity='0.77'
-            // style='stop-color:white;stop-opacity:0.77;'
+            stopColor='white'
+            stopOpacity='0.77'
+            // style='stopColor:white;stopOpacity:0.77;'
           />
         </linearGradient>
         <clipPath id='clip0_85_179'>
@@ -139,7 +139,7 @@ const GoldPlusPlanIcon = () => {
             height='300'
             rx='150'
             fill='white'
-            // style='fill:white;fill-opacity:1;'
+            // style='fill:white;fillOpacity:1;'
           />
         </clipPath>
       </defs>

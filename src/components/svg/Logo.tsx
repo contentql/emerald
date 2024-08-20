@@ -53,12 +53,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -70,12 +70,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -87,12 +87,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -104,12 +104,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -121,12 +121,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
         <linearGradient
@@ -138,12 +138,12 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
           gradientUnits='userSpaceOnUse'>
           <stop
             stopColor='#FFD69C'
-            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stop-opacity:1;'
+            // style='stopColor:#FFD69C;stopColor:color(display-p3 1.0000 0.8406 0.6104);stopOpacity:1;'
           />
           <stop
             offset='1'
             stopColor='#F95E70'
-            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stop-opacity:1;'
+            // style='stopColor:#F95E70;stopColor:color(display-p3 0.9765 0.3686 0.4392);stopOpacity:1;'
           />
         </linearGradient>
       </defs>
