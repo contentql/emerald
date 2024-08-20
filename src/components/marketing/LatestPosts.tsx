@@ -112,14 +112,14 @@ const LatestPosts = () => {
               <div
                 key={index}
                 className='flex w-full flex-col items-start gap-6 sm:flex-row'>
-                <div className='avatar'>
-                  <div className='relative h-24 w-full'>
+                <div className='avatar w-full md:w-auto'>
+                  <div className='relative h-60 w-full md:h-28 md:w-28'>
                     <Link href={`/${post?.title}`}>
                       <Image
                         src={post?.imageUrl}
                         alt='Post'
                         fill
-                        className='rounded-full'
+                        className='rounded-xl md:rounded-full'
                       />
                     </Link>
                   </div>
