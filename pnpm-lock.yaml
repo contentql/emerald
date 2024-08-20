@@ -18,9 +18,6 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.0.18
         version: 5.0.18
-      '@headlessui/react':
-        specifier: ^2.1.2
-        version: 2.1.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       '@hookform/resolvers':
         specifier: ^3.4.0
         version: 3.6.0(react-hook-form@7.52.0(react@19.0.0-rc-fb9a90fa48-20240614))
@@ -740,13 +737,6 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@headlessui/react@2.1.2':
-    resolution: {integrity: sha512-Kb3hgk9gRNRcTZktBrKdHhF3xFhYkca1Rk6e1/im2ENf83dgN54orMW0uSKTXFnUpZOUFZ+wcY05LlipwgZIFQ==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: ^18
-      react-dom: ^18
-
   '@hookform/resolvers@3.6.0':
     resolution: {integrity: sha512-UBcpyOX3+RR+dNnqBd0lchXpoL8p4xC21XP8H6Meb8uve5Br1GCnmg0PcBoKKqPKgGu9GHQ/oygcmPrQhetwqw==}
     peerDependencies:
@@ -1209,27 +1199,6 @@ packages:
       '@types/react':
         optional: true
 
-  '@react-aria/focus@3.18.1':
-    resolution: {integrity: sha512-N0Cy61WCIv+57mbqC7hiZAsB+3rF5n4JKabxUmg/2RTJL6lq7hJ5N4gx75ymKxkN8GnVDwt4pKZah48Wopa5jw==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
-  '@react-aria/interactions@3.22.1':
-    resolution: {integrity: sha512-5TLzQaDAQQ5C70yG8GInbO4wIylKY67RfTIIwQPGR/4n5OIjbUD8BOj3NuSsuZ/frUPaBXo1VEBBmSO23fxkjw==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
-  '@react-aria/ssr@3.9.5':
-    resolution: {integrity: sha512-xEwGKoysu+oXulibNUSkXf8itW0npHHTa6c4AyYeZIJyRoegeteYuFpZUBPtIDE8RfHdNsSmE1ssOkxRnwbkuQ==}
-    engines: {node: '>= 12'}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
-  '@react-aria/utils@3.25.1':
-    resolution: {integrity: sha512-5Uj864e7T5+yj78ZfLnfHqmypLiqW2mN+nsdslog2z5ssunTqjolVeM15ootXskjISlZ7MojLpq97kIC4nlnAw==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
   '@react-email/body@0.0.8':
     resolution: {integrity: sha512-gqdkNYlIaIw0OdpWu8KjIcQSIFvx7t2bZpXVxMMvBS859Ia1+1X3b5RNbjI3S1ZqLddUf7owOHkO4MiXGE+nxg==}
     peerDependencies:
@@ -1355,16 +1324,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.2.0
-
-  '@react-stately/utils@3.10.2':
-    resolution: {integrity: sha512-fh6OTQtbeQC0ywp6LJuuKs6tKIgFvt/DlIZEcIpGho6/oZG229UnIk6TUekwxnDbumuYyan6D9EgUtEMmT8UIg==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
-  '@react-types/shared@3.24.1':
-    resolution: {integrity: sha512-AUQeGYEm/zDTN6zLzdXolDxz3Jk5dDL7f506F07U8tBwxNNI3WRdhU84G0/AaFikOZzDXhOZDr3MhQMzyE7Ydw==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
 
   '@rushstack/eslint-patch@1.10.3':
     resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
@@ -1711,15 +1670,6 @@ packages:
     resolution: {integrity: sha512-mYYfJujKg2kxmkRRjA6nn4YKG3ITsKuH22f1kteJ5IuVQqgKUgbaSQfYwVP0gBS05mhwxO03HVpD0t7BMN7WOA==}
     peerDependencies:
       react: ^18.0.0
-
-  '@tanstack/react-virtual@3.8.6':
-    resolution: {integrity: sha512-YcOQAxccjIqiC8cQ8QQiDU6F+JZtfpKNvYsw/ju5Q6S5/m9KDs5SaJvKz1kLj3RKNAOBMIFA9snN2MDmyT9lBQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@tanstack/virtual-core@3.8.6':
-    resolution: {integrity: sha512-UJeU4SBrx3hqULNzJ3oC0kgJ5miIAg+FwomxMTlQNxob6ppTInifANHd9ukETvzdzxr6zt3CjQ0rttQpVjbt6Q==}
 
   '@tokenizer/token@0.3.0':
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
@@ -5424,15 +5374,6 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@headlessui/react@2.1.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@floating-ui/react': 0.26.17(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-aria/focus': 3.18.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-aria/interactions': 3.22.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@tanstack/react-virtual': 3.8.6(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
-      react: 19.0.0-rc-fb9a90fa48-20240614
-      react-dom: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
-
   '@hookform/resolvers@3.6.0(react-hook-form@7.52.0(react@19.0.0-rc-fb9a90fa48-20240614))':
     dependencies:
       react-hook-form: 7.52.0(react@19.0.0-rc-fb9a90fa48-20240614)
@@ -5955,37 +5896,6 @@ snapshots:
     optionalDependencies:
       '@types/react': types-react@19.0.0-beta.2
 
-  '@react-aria/focus@3.18.1(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@react-aria/interactions': 3.22.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-aria/utils': 3.25.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-types/shared': 3.24.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@swc/helpers': 0.5.11
-      clsx: 2.1.1
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@react-aria/interactions@3.22.1(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@react-aria/ssr': 3.9.5(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-aria/utils': 3.25.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-types/shared': 3.24.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@swc/helpers': 0.5.11
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@react-aria/ssr@3.9.5(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@swc/helpers': 0.5.11
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@react-aria/utils@3.25.1(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@react-aria/ssr': 3.9.5(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-stately/utils': 3.10.2(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@react-types/shared': 3.24.1(react@19.0.0-rc-fb9a90fa48-20240614)
-      '@swc/helpers': 0.5.11
-      clsx: 2.1.1
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
   '@react-email/body@0.0.8(react@19.0.0-rc-fb9a90fa48-20240614)':
     dependencies:
       react: 19.0.0-rc-fb9a90fa48-20240614
@@ -6105,15 +6015,6 @@ snapshots:
       react: 19.0.0-rc-fb9a90fa48-20240614
 
   '@react-email/text@0.0.8(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@react-stately/utils@3.10.2(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@swc/helpers': 0.5.11
-      react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@react-types/shared@3.24.1(react@19.0.0-rc-fb9a90fa48-20240614)':
     dependencies:
       react: 19.0.0-rc-fb9a90fa48-20240614
 
@@ -6562,14 +6463,6 @@ snapshots:
     dependencies:
       '@tanstack/query-core': 5.45.0
       react: 19.0.0-rc-fb9a90fa48-20240614
-
-  '@tanstack/react-virtual@3.8.6(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
-    dependencies:
-      '@tanstack/virtual-core': 3.8.6
-      react: 19.0.0-rc-fb9a90fa48-20240614
-      react-dom: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
-
-  '@tanstack/virtual-core@3.8.6': {}
 
   '@tokenizer/token@0.3.0': {}
 
