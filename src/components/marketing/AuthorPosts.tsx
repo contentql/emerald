@@ -43,16 +43,16 @@ const listOfPosts = [
 
 const AuthorPosts = () => {
   return (
-    <div className='mx-auto my-16 flex w-full flex-col gap-5 md:max-w-screen-sm'>
+    <div className='mx-auto my-16 flex w-full flex-col gap-5 px-4 md:max-w-screen-sm md:px-0'>
       <div className='flex'>
         <div className='text-sm font-semibold '>NOAH COOPER</div> {'-'}{' '}
         <div className='text-sm font-semibold  '>3 POSTS</div>
       </div>
       <div className='space-y-14'>
         {listOfPosts.map((post, index) => (
-          <div key={index} className='flex gap-7'>
+          <div key={index} className='flex flex-col gap-7 md:flex-row'>
             <div className='avatar'>
-              <div className='relative h-28 w-28 rounded-full'>
+              <div className='relative h-60 w-full rounded-xl md:h-28 md:w-28 md:rounded-full'>
                 <Link href={`/${post?.title}`}>
                   <Image fill src={post?.imageUrl} alt='BlogPost' />
                 </Link>

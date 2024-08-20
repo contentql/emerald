@@ -84,7 +84,7 @@ const TagPosts = () => {
     }, 1000)
   }
   return (
-    <div className='mx-auto my-16 flex w-full flex-col gap-5 md:max-w-screen-sm'>
+    <div className='mx-auto my-16 flex w-full flex-col gap-5 px-4 md:max-w-screen-sm md:px-0'>
       <div className='flex'>
         <div className='text-sm font-semibold text-secondary-content '>
           ARCANE &nbsp;
@@ -96,14 +96,16 @@ const TagPosts = () => {
       </div>
       <div className='space-y-14'>
         {listOfPosts.slice(0, noOfPosts).map((post, index) => (
-          <div key={index} className='flex gap-7'>
+          <div key={index} className='flex flex-col gap-7 md:flex-row'>
             <div className='avatar'>
-              <Link href={`/${post?.title}`} className='relative h-28 w-28'>
+              <Link
+                href={`/${post?.title}`}
+                className='relative h-60 w-full md:h-28 md:w-28'>
                 <Image
                   fill
                   src={post?.imageUrl}
                   alt='Post'
-                  className='rounded-full'
+                  className='rounded-xl md:rounded-full'
                 />
               </Link>
             </div>
