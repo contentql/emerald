@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const BlogView = () => {
   return (
-    <div className='mx-auto my-12 flex flex-col items-center gap-2 sm:my-24  md:max-w-2xl'>
+    <div className='mx-auto my-12 flex flex-col items-center gap-2 px-4 sm:my-24 md:max-w-2xl  md:px-0'>
       <div className='flex w-full flex-col items-center gap-8'>
         <div className='flex'>
           <div className='text-secondary-content'>
@@ -36,7 +36,7 @@ const BlogView = () => {
           </Link>
         </div>
         <div className='avatar w-full'>
-          <div className='relative h-96 w-full rounded-xl'>
+          <div className='relative h-60 w-full rounded-xl md:h-96'>
             <Image
               alt='Post'
               src='https://elrond.hedwik.io/content/images/size/w1200/format/webp/2023/12/8.png'
