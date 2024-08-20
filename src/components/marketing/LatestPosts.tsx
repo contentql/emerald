@@ -195,7 +195,7 @@ const LatestPosts = () => {
             <h2 className='text-sm font-medium uppercase tracking-widest text-secondary-content'>
               Popular Categories
             </h2>
-            <div className='flex flex-row flex-wrap justify-start gap-6 md:flex-col md:flex-nowrap md:gap-5'>
+            <div className=' grid grid-cols-2 gap-2 md:gap-4 lg:grid-cols-1'>
               {[
                 'Arcane',
                 'Sylvan',
@@ -207,7 +207,7 @@ const LatestPosts = () => {
                 <Link
                   href={`/tag/${category.toLowerCase()}`}
                   key={idx}
-                  className='flex w-fit select-none flex-row items-center justify-start gap-2.5'>
+                  className='flex w-fit select-none flex-row items-center justify-start gap-3.5 rounded-xl p-2 transition-all duration-300 ease-in-out hover:bg-secondary'>
                   <Image
                     src={`/images/home/tags-image-1-2.webp`}
                     alt=''
