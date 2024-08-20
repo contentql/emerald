@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
       </div>
       <nav className='mx-auto hidden h-full w-fit select-none items-center justify-center gap-6 px-4 lg:flex'>
-        <ul className='mx-auto flex w-fit gap-6 px-4 text-[15px] font-[450] text-[#3F3F46]'>
+        <ul className='mx-auto flex w-fit items-center gap-6 px-4 text-base font-[450] text-[#3F3F46]'>
           <Link
             href={'/style-guide'}
             className={
