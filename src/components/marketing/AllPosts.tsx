@@ -16,7 +16,7 @@ const AllPosts = ({ cardData }: { cardData: CardDataType[] }) => {
 
   return (
     <Container className='py-24'>
-      <div className='grid grid-cols-4 gap-8'>
+      <div className='grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4'>
         {cardData?.map((card, index) => (
           <Link
             key={index}
